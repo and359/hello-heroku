@@ -5,15 +5,7 @@
 <h1>My first PHP page 1 2 3</h1>
 	
 <?php
-echo "FINALLY!!! AUNTY IS STAYING!!!!";
-  
-echo "<table>";
-
-echo "<tr><th>Table Heading</th><th>Table Heading</th><th>Table Heading</th><th>Table Heading</th></tr>";
-
-echo "<tr><td>Hello world.</td><td>Hello world.</td><td>Hello world.</td><td>Hello world.</td></tr>";
-
-echo "</table>";
+//echo "FINALLY!!! AUNTY IS STAYING!!!!";
   
 $servername = "us-cdbr-east-03.cleardb.com";
 $username = "b8a00bf633cf68";
