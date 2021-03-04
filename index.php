@@ -2174,13 +2174,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM heroku_69459908ed082cc.`s&p500_returns`;";
+//$sql = "SELECT * FROM heroku_69459908ed082cc.`s&p500_returns`;";
+	$sql = "SELECT * FROM heroku_69459908ed082cc.`rtd`;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
+        //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
+	echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Desc: " . $row["Desc"]. " - Close Price: " . $row["LastPx"]. " Returns: " . $row["RtnPercent"]. " - Sector: " . $row["Sector"]. " - Industry: " . $row["Industry"]. " - Volume: " . $row["Volume"]. "<br>";
     }
 } else {
     echo "0 results";
