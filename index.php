@@ -31,13 +31,6 @@
 	
 	
 	
-	<script type="text/discourse-plugin" version="0.8.18">
-    if(api.getCurrentUser() != null) {
-        $("#logged-in-user").text(" " + api.getCurrentUser().username);
-    }
-</script>
-	
-	<h2 class="x-title">Hey<span id="logged-in-user"></span>! Bienvenue dans ta nouvelle communauté</h2>
 	
 	
 	
@@ -2314,6 +2307,10 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 	echo "TGIF";
+	
 ?>
+	<p>
+<script> document.write(new Date().toLocaleDateString()); </script>
+</p>
 </body>
 </html>
