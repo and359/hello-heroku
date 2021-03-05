@@ -2260,7 +2260,7 @@ Highcharts.chart('container1', {
 	
 	
 	
-<td align="center" style="background:#FFFFE6">	
+
 <?php
 //echo "FINALLY!!! AUNTY IS STAYING!!!!";
   
@@ -2284,12 +2284,12 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
-	echo '<td class="tokengreen">' . ++$row_num . ") Ticker: " . $row["Ticker"]. " - Desc: " . $row["Desc"]. " - Close Price: " . $row["LastPx"]. " Returns: " . $row["RtnPercent"]. " - Sector: " . $row["Sector"]. " - Industry: " . $row["Industry"]. " - Volume: " . $row["Volume"]. '</td>' . "<br>";
+	echo "<table border=\"0\"><tr>" . ++$row_num . ") Ticker: " . $row["Ticker"]. " - Desc: " . $row["Desc"]. " - Close Price: " . $row["LastPx"]. " Returns: " . $row["RtnPercent"]. " - Sector: " . $row["Sector"]. " - Industry: " . $row["Industry"]. " - Volume: " . $row["Volume"]. "</td></table>" . "<br>";
     }
 } else {
     echo "0 results";
 }
 $conn->close();
-?></td>
+?>
 </body>
 </html>
