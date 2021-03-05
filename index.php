@@ -2260,7 +2260,7 @@ Highcharts.chart('container1', {
 	
 	
 	
-	
+<td align="center" style="background:#FFFFE6">	
 <?php
 //echo "FINALLY!!! AUNTY IS STAYING!!!!";
   
@@ -2290,6 +2290,6 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
-?>
+?></td>
 </body>
 </html>
