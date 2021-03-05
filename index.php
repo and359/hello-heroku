@@ -33,43 +33,20 @@
 	
 <!--username-->	
 	
-	<script type="text/javascript">
-
-var loginName = "";
-var userid = _spPageContextInfo.userId;
-GetCurrentUser();
-
-function GetCurrentUser() {
-var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/getuserbyid(" + userid + ")";
-
-var requestHeaders = { "accept" : "application/json;odata=verbose" };
-
-$.ajax({
-  url : requestUri,
-  contentType : "application/json;odata=verbose",
-  headers : requestHeaders,
-  success : onSuccess,
-  error : onError
-  });
-}
-
-function onSuccess(data, request) {
-    var loginName = data.d.Title;
-    alert("Hello " + loginName);
-
-    // to set the "hello username" into the page
-    document.getElementById("id").innerHTML = "Hello " + loginName;
-    }
-
-function onError(error) {
-  alert(error);
-  }
-
+<script>
+$(document).ready(function(){
+	var user_name = $('span.element_username').text();
+	var user_id = Number($("#enjin-bar").data("user_id"));
+	if (user_id > 0){
+		document.getElementById("displayUser").innerHTML='Welcome ' + user_name + '';
+	} else {
+		document.getElementById("displayUser").innerHTML='Welcome Guest';}
+	});
 </script>
 	
 	<!--end of username-->	
 	
-	
+	<span id="displayUser"></span>
 	
 	
 	
@@ -80,7 +57,7 @@ function onError(error) {
 	
 	
 <body>
-document.getElementById("id").innerHTML = "Hello " + loginName;
+
 <h1>S&P500 Performance (PHP)</h1>
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
