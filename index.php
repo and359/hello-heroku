@@ -6,7 +6,8 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 		<title>Accelerometer data</title>
 
-		<style type="text/css">			
+		<!-- 
+			<style type="text/css">			
 			body{
 				font-family: Arial;
 			    margin: 80px 100px 10px 100px;
@@ -23,6 +24,7 @@
 				padding: 10px;
 			}
 		</style>
+-->
 
 	</head>
 
