@@ -2293,11 +2293,12 @@ if ($result->num_rows > 0) {
 	
 	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td></tr>";
 	
-    }	echo "</table>";
+    }	echo "</table><br>";
 } else {
     echo "0 results";
 }
 $conn->close();
+	echo "TGIF";
 ?>
 </body>
 </html>
