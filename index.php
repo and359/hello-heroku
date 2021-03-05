@@ -28,6 +28,21 @@
 
 	</head>
 
+	
+	
+	
+	<script type="text/discourse-plugin" version="0.8.18">
+    if(api.getCurrentUser() != null) {
+        $("#logged-in-user").text(" " + api.getCurrentUser().username);
+    }
+</script>
+	
+	<h2 class="x-title">Hey<span id="logged-in-user"></span>! Bienvenue dans ta nouvelle communauté</h2>
+	
+	
+	
+	
+	
 <body>
 
 <h1>S&P500 Performance (PHP)</h1>
