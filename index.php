@@ -31,22 +31,12 @@
 	
 
 	
-<!--username-->	
+
 	
-<script>
-$(document).ready(function(){
-	var user_name = $('span.element_username').text();
-	var user_id = Number($("#enjin-bar").data("user_id"));
-	if (user_id > 0){
-		document.getElementById("displayUser").innerHTML='Welcome ' + user_name + '';
-	} else {
-		document.getElementById("displayUser").innerHTML='Welcome Guest';}
-	});
-</script>
 	
-	<!--end of username-->	
 	
-	<span id="displayUser"></span>
+	
+	
 	
 	
 	
@@ -58,6 +48,15 @@ $(document).ready(function(){
 	
 <body>
 
+	<!--username-->	
+	<div id="cloned_username"></div>
+
+<script>
+$('#cloned_username').html( $('span.element_username').clone())
+
+</script>
+	<!--end of username-->	
+	
 <h1>S&P500 Performance (PHP)</h1>
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
