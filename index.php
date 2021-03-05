@@ -2288,7 +2288,9 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
-	echo "<table border=1><tr><td>" . ++$row_num . ")</td><td> Ticker: " . $row["Ticker"]. "</td><td>Desc: " . $row["Desc"]. "</td><td>Close Price: " . $row["LastPx"]. "</td><td>Returns: " . $row["RtnPercent"]. "</td><td>Sector: " . $row["Sector"]. "</td><td>Industry: " . $row["Industry"]. "</td><td>Volume: " . $row["Volume"]. "</td></tr></table>" . "<br>";
+	echo "<table border=1>";
+	echo "<tr><td>" . ++$row_num . ")</td><td> Ticker: " . $row["Ticker"]. "</td><td>Desc: " . $row["Desc"]. "</td><td>Close Price: " . $row["LastPx"]. "</td><td>Returns: " . $row["RtnPercent"]. "</td><td>Sector: " . $row["Sector"]. "</td><td>Industry: " . $row["Industry"]. "</td><td>Volume: " . $row["Volume"]. "</td></tr>" . "<br>";
+	echo "</table>";
     }
 } else {
     echo "0 results";
