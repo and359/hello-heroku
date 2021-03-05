@@ -2259,7 +2259,11 @@ Highcharts.chart('container1', {
 	
 	
 	
-	
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
 
 <?php
 //echo "FINALLY!!! AUNTY IS STAYING!!!!";
