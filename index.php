@@ -2250,7 +2250,7 @@ Highcharts.chart('container1', {
 			</script>
 	    </div>
 	
-	***line chart end &nbsp;
+	***line chart end <br>
 	
 	
 	
