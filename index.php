@@ -3,48 +3,6 @@
 <body>
 
 <h1>S&P500 Performance (PHP)</h1>
-
-	
-	
-	/*		*/
-	/*line chart	*/
-	/*		*/
-<?php
-	/* Database connection settings */
-	$host = 'us-cdbr-east-03.cleardb.com';
-	$user = 'b8a00bf633cf68';
-	$pass = '1a8113a0';
-	$db = 'heroku_69459908ed082cc';
-	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
-
-	$data1 = '';
-	$data2 = '';
-
-	//query to get data from the table
-	$sql = "SELECT * FROM `datasets` ";
-    $result = mysqli_query($mysqli, $sql);
-
-	//loop through the returned data
-	while ($row = mysqli_fetch_array($result)) {
-
-		$data1 = $data1 . '"'. $row['data1'].'",';
-		$data2 = $data2 . '"'. $row['data2'] .'",';
-	}
-
-	$data1 = trim($data1,",");
-	$data2 = trim($data2,",");
-?>
-	
-
-	/*			*/
-	/*end line chart	*/
-	/*			*/
-	
-	
-	
-	
-	
-	
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -2202,6 +2160,48 @@ Highcharts.chart('container1', {
     }]
 
 });</script>
+
+	/*		*/
+	/*line chart	*/
+	/*		*/
+<?php
+	/* Database connection settings */
+	$host = 'us-cdbr-east-03.cleardb.com';
+	$user = 'b8a00bf633cf68';
+	$pass = '1a8113a0';
+	$db = 'heroku_69459908ed082cc';
+	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+
+	$data1 = '';
+	$data2 = '';
+
+	//query to get data from the table
+	$sql = "SELECT * FROM `datasets` ";
+    $result = mysqli_query($mysqli, $sql);
+
+	//loop through the returned data
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data1 = $data1 . '"'. $row['data1'].'",';
+		$data2 = $data2 . '"'. $row['data2'] .'",';
+	}
+
+	$data1 = trim($data1,",");
+	$data2 = trim($data2,",");
+?>
+	
+
+	/*			*/
+	/*end line chart	*/
+	/*			*/
+	
+	
+	
+	
+	
+	
+	
+	
 	
 <?php
 //echo "FINALLY!!! AUNTY IS STAYING!!!!";
