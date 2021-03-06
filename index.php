@@ -221,6 +221,7 @@ Highcharts.chart('container1', {
 				var ctx = document.getElementById("chart").getContext('2d');
     			var myChart = new Chart(ctx, {
         		type: 'line',
+			title: {text: '2017 Tour de France Stage 8: Dole - Station des Rousses'},
 		        data: {
 		            labels: [<?php echo $date; ?>],
 		            datasets: 
@@ -238,7 +239,7 @@ Highcharts.chart('container1', {
 		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
 		            tooltips:{mode: 'index'},
 		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-		        }, title: {text: '2017 Tour de France Stage 8: Dole - Station des Rousses'}
+		        }
 				
     }
 					       );
