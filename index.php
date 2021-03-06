@@ -279,7 +279,6 @@ Highcharts.chart('container1', {
 	
 	
 	
-	
 <style>
 table, th, td {
   border: 1px solid black;
@@ -319,7 +318,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 	
-	$sql = "select uploadtime from `heroku_69459908ed082cc`.`rtd` limit 1;";
+	$sql = "select uploadtime from `heroku_69459908ed082cc`.`rtd` order by uploadtime desc limit 1;";
 $result = $conn->query($sql);
 	$row = $result->fetch_assoc();
 	echo "Table updated on: " . $row["uploadtime"] . "<br><br>";
