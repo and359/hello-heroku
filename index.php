@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 22</h1>
+<h1>S&P500 Performance (PHP) updated 23</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -149,18 +149,18 @@ Highcharts.chart('container1', {
         }]
     }],
 
-    xAxis: {
+    //xAxis: {
         //labels: {
             //format: '{value}'
         //},
         //minRange: 0,
-        title: {
-            text: 'Distance'
-        },
-        accessibility: {
-            rangeDescription: 'Range: 0 to 187.8km.'
-        }
-    },
+       // title: {
+        //    text: 'Distance'
+        //},
+        //accessibility: {
+        //    rangeDescription: 'Range: 0 to 187.8km.'
+      //  }
+    //},
 
     yAxis: {
         startOnTick: true,
@@ -190,8 +190,16 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },      
-        data: [['06-03-2021', 100],['07-03-2021', 200]],
-	
+        //data: [['06-03-2021', 100],['07-03-2021', 200]],
+	data: {
+      labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
+      datasets: [{
+         label: 'LINE',
+         data: [3, 1, 4, 2, 5],
+         backgroundColor: 'rgba(0, 119, 290, 0.2)',
+         borderColor: 'rgba(0, 119, 290, 0.6)'
+      }]
+   },
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
