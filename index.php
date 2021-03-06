@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated10</h1>
+<h1>S&P500 Performance (PHP) updated11</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -55,7 +55,7 @@ Highcharts.chart('container1', {
         panning: true,
         panKey: 'shift',
         scrollablePlotArea: {
-            minWidth: 600
+            minWidth: 1000
         }
     },
 
@@ -198,11 +198,6 @@ Highcharts.chart('container1', {
 
     xAxis: {
         labels: {
-		type: 'time',
-                time: {
-                    displayFormats: {
-                        quarter: 'DD MMM YY'
-                    }},
             format: '{value}'
         },
         minRange: 0,
@@ -242,7 +237,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },
-        data: [['1Jan21', 100],['2Jan21', 200]],
+        data: [[100, 100],[200, 200]],
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
