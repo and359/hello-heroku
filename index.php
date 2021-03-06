@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated2</h1>
+<h1>S&P500 Performance (PHP) updated3</h1>
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -45,13 +45,9 @@
 
 	
 	
-	
-	
-	
-	
 <!--to delete-->	
-	
-	<?php
+<!--
+ 	<?php
 	/* Database connection settings */
 	$host = 'us-cdbr-east-03.cleardb.com';
 	$user = 'b8a00bf633cf68';
@@ -75,11 +71,12 @@
 
 	$data1 = trim($data1,",");
 	$data2 = trim($data2,",");
-?>
-	
+?>	check-->	
+
 	
 <!--to delete-->	
 	
+         
 	
 	
 	
