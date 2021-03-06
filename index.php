@@ -84,7 +84,7 @@ Highcharts.chart('container1', {
         },
         labels: [{
             point: {
-                xAxis: 0,
+                xAxis: '06-03-2021',
                 yAxis: 0,
                 x: '06-03-2021',
                 y: 100
@@ -92,37 +92,37 @@ Highcharts.chart('container1', {
             text: 'Mont-sur-Monnet'
         }, {
             point: {
-                xAxis: 0,
+                xAxis: '06-03-2021',
                 yAxis: 0,
                 x: '07-03-2021',
                 y: 150
             },
-            x: -10,
+            //x: -10,
             text: 'Bonlieu'
         }]
     }, {
         labels: [{
             point: {
-                xAxis: 0,
+                xAxis: '06-03-2021',
                 yAxis: 0,
                 x: '08-03-2021',
                 y: 200
             },
-            x: -30,
+            //x: -30,
             text: 'Col de la Joux'
         }]
-    }//, {
-       // labelOptions: {
-         //   shape: 'connector',
-           // align: 'right',
-           // justify: false,
-         //   crop: true,
-         //   style: {
-         //       fontSize: '0.8em',
-         //       textOutline: '1px white'
-         //   }
-      //  },
-    //}
+    }, {
+        labelOptions: {
+            shape: 'connector',
+            align: 'right',
+            justify: false,
+            crop: true,
+            style: {
+                fontSize: '0.8em',
+                textOutline: '1px white'
+            }
+        },
+    }
 		 ],
 
     xAxis: {
