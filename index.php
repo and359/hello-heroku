@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 27</h1>
+<h1>S&P500 Performance (PHP) updated 28</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -86,22 +86,6 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 27.98,
-                y: 255
-            },
-            text: 'Arbois'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 45.5,
-                y: 611
-            },
-            text: 'Montrond'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
                 x: 100,
                 y: 100
             },
@@ -115,25 +99,9 @@ Highcharts.chart('container1', {
             },
             x: -10,
             text: 'Bonlieu'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 129.5,
-                y: 382
-            },
-            text: 'Chassal'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 159,
-                y: 443
-            },
-            text: 'Saint-Claude'
         }]
-    }, {
-        labels: [{
+    }, 
+	{labels: [{
             point: {
                 xAxis: 0,
                 yAxis: 0,
@@ -142,22 +110,6 @@ Highcharts.chart('container1', {
             },
             x: -30,
             text: 'Col de la Joux'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 138.5,
-                y: 748
-            },
-            text: 'Côte de Viry'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 176.4,
-                y: 1202
-            },
-            text: 'Montée de la Combe<br>de Laisia Les Molunes'
         }]
     }, {
         labelOptions: {
