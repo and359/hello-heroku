@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 26</h1>
+<h1>S&P500 Performance (PHP) updated 27</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -238,7 +238,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },      
-        data: [['06-03-2021', 100],['07-03-2021', 150],['08-03-2021', 200]],
+        data: [[100, 100],[150, 150],[200, 200]],
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
