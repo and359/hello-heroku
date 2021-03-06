@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 38</h1>
+<h1>S&P500 Performance (PHP) updated 39</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -186,95 +186,7 @@ Highcharts.chart('container1', {
 	
 	
 	***line chart 
-<?php
-	/* Database connection settings */
-	$host = 'us-cdbr-east-03.cleardb.com';
-	$user = 'b8a00bf633cf68';
-	$pass = '1a8113a0';
-	$db = 'heroku_69459908ed082cc';
-	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 
-	$data1 = '';
-	$data2 = '';
-	$date = '';
-
-	//query to get data from the table
-	$sql = "SELECT * FROM `backtest`;";
-    $result = mysqli_query($mysqli, $sql);
-
-	//loop through the returned data
-	while ($row = mysqli_fetch_array($result)) {
-
-		$data1 = $data1 . '"'. $row['Price'].'",';
-		$date = $date . '"'. $row['PriceDate'] .'",';
-	}
-
-	$data1 = trim($data1,",");
-	//$data2 = trim($data2,",");
-	$date = trim($date,",");
-	
-	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
-    $result = mysqli_query($mysqli, $sql);
-	$row = mysqli_fetch_array($result);
-	$data2 = $data2 . '"'. $row['Ticker'].'",';
-	
-?>
-	<div class="container">	
-	    <h1><?php echo $data2; ?> Share Price</h1>       
-			<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-
-			<script>
-				var marketing = ['2020-04-14', '2020-10-02'];
-				var amount = [50, 70];
-// populate 'annotations' array dynamically based on 'marketing'
-				var annotations = marketing.map(function(date, index) {
-   					return {
-      					type: 'line',
-      					id: 'vline' + index,
-      					mode: 'vertical',
-      					scaleID: 'x-axis-0',
-      					value: date,
-      					borderColor: 'green',
-      					borderWidth: 1,
-      					label: {
-         				enabled: true,
-         				position: "center",
-         				content: amount[index]
-      					}
-   					}
-					});
-				
-				
-				
-				
-				var ctx = document.getElementById("chart").getContext('2d');
-    			var myChart = new Chart(ctx, {
-        		type: 'line',
-			title: {text: '2017 Tour de France Stage 8: Dole - Station des Rousses'},
-		        data: {
-		            labels: [<?php echo $date; ?>],
-		            datasets: 
-		            [{
-		                label: 'Data 1',
-		                data: [<?php echo $data1; ?>],
-		                backgroundColor: 'transparent',
-		                borderColor:'rgba(0,255,255)',
-		                borderWidth: 3
-		            }
-			    ]
-		        },
-		     
-		        options: {
-		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-		            tooltips:{mode: 'index'},
-		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}},
-			annotation: {drawTime: 'afterDatasetsDraw',annotations: annotations}
-		        }
-				
-    }
-					       );
-			</script>
-	    </div>
 	
 	
 	
