@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 20</h1>
+<h1>S&P500 Performance (PHP) updated 21</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -314,7 +314,7 @@ if ($result->num_rows > 0) {
 	
 	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
 	
-    }	echo "</table><br>";
+    }	echo "</table>";
 } else {
     echo "0 results";
 }
