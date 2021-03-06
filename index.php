@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated18</h1>
+<h1>S&P500 Performance (PHP) updated19</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -322,7 +322,7 @@ if ($result->num_rows > 0) {
 	$sql = "select uploadtime from `heroku_69459908ed082cc`.`rtd` limit 1;";
 $result = $conn->query($sql);
 	$row = $result->fetch_assoc();
-	echo "Table updated on: " . $row["uploadtime"] . $result . "<br><br>";
+	echo "Table updated on: " . $row["uploadtime"] . $row . "<br><br>";
 	
 $conn->close();
 	
