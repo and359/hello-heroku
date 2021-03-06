@@ -1,9 +1,9 @@
 
-<script async src="//jsfiddle.net/beaver71/3qkcLk6v/embed/">
+<script async src="//jsfiddle.net/beaver71/3qkcLk6v/embed/"></script>
    
    <canvas id="ctx">
+<script>
 
-</canvas>
    
 var marketing = ['2017-08-05', '2017-08-12'];
 var amount = [50, 70];
@@ -51,6 +51,8 @@ var chart = new Chart(ctx, {
    }
 });
 
-</script>
 
 
+
+      </script>
+      </canvas>
