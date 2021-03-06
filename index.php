@@ -321,8 +321,8 @@ if ($result->num_rows > 0) {
 	
 	$sql = "select uploadtime from `heroku_69459908ed082cc`.`rtd` limit 1;";
 $result = $conn->query($sql);
-	$row = $result->fetch_assoc()
-	echo "Table updated on: " . $row["UploadTime"]
+	$row = $result->fetch_assoc();
+	echo "Table updated on: " . $row["UploadTime"];
 	
 $conn->close();
 	echo "TGIF";
