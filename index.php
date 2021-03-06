@@ -190,7 +190,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },      
-        data: [[100, 100],[200, 200]],
+        data: [['06-03-2021', 100],['07-03-2021', 200]],
 	
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
