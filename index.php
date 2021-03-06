@@ -1,4 +1,10 @@
-<canvas id="ctx"></canvas>
+
+<script async src="//jsfiddle.net/beaver71/3qkcLk6v/embed/">
+   
+   <canvas id="ctx">
+
+</canvas>
+   
 var marketing = ['2017-08-05', '2017-08-12'];
 var amount = [50, 70];
 // populate 'annotations' array dynamically based on 'marketing'
@@ -44,3 +50,7 @@ var chart = new Chart(ctx, {
       }
    }
 });
+
+</script>
+
+
