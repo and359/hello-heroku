@@ -2247,7 +2247,7 @@ Highcharts.chart('container1', {
     			var myChart = new Chart(ctx, {
         		type: 'line',
 		        data: {
-		            labels: [1,2,3,4,5,6,7,8,9],
+		            labels: ["1JAN21","2JAN21","3JAN21","4JAN21","5JAN21","6JAN21"],
 		            datasets: 
 		            [{
 		                label: 'Data 1',
