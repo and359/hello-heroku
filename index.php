@@ -6,51 +6,16 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 		<title>S&P500</title>
 
-		<!-- 
-			<style type="text/css">			
-			body{
-				font-family: Arial;
-			    margin: 80px 100px 10px 100px;
-			    padding: 0;
-			    color: white;
-			    text-align: center;
-			    background: #555652;
-			}
-
-			.container {
-				color: #E8E9EB;
-				background: #222;
-				border: #555652 1px solid;
-				padding: 10px;
-			}
-		</style>
--->
-
 	</head>
 
 	
-
 	<!--username-->	
 	
 	<!--end of username-->	
 	
 	
-	
 <body>
 
-		<!--username-->	
-<script>
-$(document).ready(function(){
-	var user_name = $('span.element_username').text();
-	var user_id = Number($("#enjin-bar").data("user_id"));
-	if (user_id > 0){
-		document.getElementById("displayUser").innerHTML='Welcome ' + user_name + '';
-	} else {
-		document.getElementById("displayUser").innerHTML='Welcome Guest';}
-	});
-</script>
-	<span id="displayUser"></span>
-	<!--end of username-->	
 
 	
 <h1>S&P500 Performance (PHP)</h1>
@@ -67,51 +32,6 @@ $(document).ready(function(){
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1 {background-color: #008CBA;} /* Blue */
-}
-
-	
-	
-<?php  
-  
-  if(array_key_exists('button1', $_POST)) { 
-            button1(); 
-        } 
-        else if(array_key_exists('button2', $_POST)) { 
-            button2(); 
-        } 
-        function button1() { 
-            echo "This is Button1 that is selected"; 
-        } 
-        function button2() { 
-            echo "This is Button2 that is selected"; 
-        } 
-?>
-
-  <form method="post"> 
-        <input type="submit" name="button1"
-                class="button" value="Button1" /> 
-          
-        <input type="submit" name="button2"
-                class="button" value="Button2" /> 
-    </form>
-  
-  </style>
-  
-  <button class="button button1">Run Backtest</button>
 
 <div class="container">
 	<div class="row">
