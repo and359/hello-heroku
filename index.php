@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated14</h1>
+<h1>S&P500 Performance (PHP) updated15</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -190,13 +190,8 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },      
-        //data: [[100, 100],[200, 200]],
-	data: {
-      labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
-      datasets: [{
-         label: 'LINE',
-         data: [['2017-08-02', 100],['2017-08-09', 200]]
-      ]},
+        data: [[100, 100],[200, 200]],
+	
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
