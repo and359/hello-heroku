@@ -17,8 +17,9 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated5</h1>
-	
+<h1>S&P500 Performance (PHP) updated6</h1>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -197,9 +198,9 @@ Highcharts.chart('container1', {
 
     xAxis: {
         labels: {
-            format: '{value} km'
+            format: '{value}'
         },
-        minRange: 5,
+        minRange: 0,
         title: {
             text: 'Distance'
         },
@@ -236,7 +237,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },
-        data: [[100, 100],[200, 200]],
+        data: [[1Jan21, 100],[2Jan21, 200]],
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
@@ -249,6 +250,12 @@ Highcharts.chart('container1', {
 
 });</script>
 
+	
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	
+	
+	
+	
 	***line chart 
 <?php
 	/* Database connection settings */
