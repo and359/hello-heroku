@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated8</h1>
+<h1>S&P500 Performance (PHP) updated9</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -198,7 +198,7 @@ Highcharts.chart('container1', {
 
     xAxis: {
         labels: {
-            format: 'DD MMM YY'
+            format: '{value, DD MMM YY}'
         },
         minRange: 0,
         title: {
