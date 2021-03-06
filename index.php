@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 24</h1>
+<h1>S&P500 Performance (PHP) updated 25</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -86,7 +86,7 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 100,
+                x: '06-03-2021',
                 y: 100
             },
             text: 'Mont-sur-Monnet'
@@ -94,7 +94,7 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 150,
+                x: '07-03-2021',
                 y: 150
             },
             x: -10,
@@ -105,49 +105,25 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 200,
+                x: '08-03-2021',
                 y: 200
             },
             x: -30,
             text: 'Col de la Joux'
         }]
-    }, {
-        labelOptions: {
-            shape: 'connector',
-            align: 'right',
-            justify: false,
-            crop: true,
-            style: {
-                fontSize: '0.8em',
-                textOutline: '1px white'
-            }
-        },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 96.2,
-                y: 783
-            },
-            text: '6.1 km climb<br>4.6% on avg.'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 134.5,
-                y: 540
-            },
-            text: '7.6 km climb<br>5.2% on avg.'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 172.2,
-                y: 925
-            },
-            text: '11.7 km climb<br>6.4% on avg.'
-        }]
-    }],
+    }//, {
+       // labelOptions: {
+         //   shape: 'connector',
+           // align: 'right',
+           // justify: false,
+         //   crop: true,
+         //   style: {
+         //       fontSize: '0.8em',
+         //       textOutline: '1px white'
+         //   }
+      //  },
+    //}
+		 ],
 
     xAxis: {
         //labels: {
@@ -190,7 +166,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },      
-        data: [['06-03-2021', 100],['07-03-2021', 200]],
+        data: [['06-03-2021', 100],['07-03-2021', 150],['08-03-2021', 200]],
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
