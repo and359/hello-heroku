@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 28</h1>
+<h1>S&P500 Performance (PHP) updated 29</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -122,31 +122,7 @@ Highcharts.chart('container1', {
                 textOutline: '1px white'
             }
         },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 96.2,
-                y: 783
-            },
-            text: '6.1 km climb<br>4.6% on avg.'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 134.5,
-                y: 540
-            },
-            text: '7.6 km climb<br>5.2% on avg.'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 172.2,
-                y: 925
-            },
-            text: '11.7 km climb<br>6.4% on avg.'
-        }]
+        labels: []
     }],
 
     xAxis: {
