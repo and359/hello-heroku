@@ -10,22 +10,11 @@
 
 	
 	<!--username-->	
-	<script>
-$(document).ready(function(){
-	var user_name = $('span.element_username').text();
-	var user_id = Number($("#enjin-bar").data("user_id"));
-	if (user_id > 0){
-		document.getElementById("displayUser").innerHTML='Welcome ' + user_name + '';
-	} else {
-		document.getElementById("displayUser").innerHTML='Welcome Guest';}
-	});
-</script>
-	<span id="displayUser"></span>
+
 	<!--end of username-->	
 	
 	
 <body>
-
 
 	
 <h1>S&P500 Performance (PHP)</h1>
@@ -2129,7 +2118,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },
-        data: elevationData,
+        data: [<?php echo $data1; ?>],
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
