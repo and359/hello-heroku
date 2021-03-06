@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 29</h1>
+<h1>S&P500 Performance (PHP) updated 30</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -196,20 +196,22 @@ Highcharts.chart('container1', {
 
 	$data1 = '';
 	$data2 = '';
+	$date = '';
 
 	//query to get data from the table
-	$sql = "SELECT * FROM `datasets` ";
+	$sql = "SELECT * FROM `backtest` ";
     $result = mysqli_query($mysqli, $sql);
 
 	//loop through the returned data
 	while ($row = mysqli_fetch_array($result)) {
 
-		$data1 = $data1 . '"'. $row['data1'].'",';
-		$data2 = $data2 . '"'. $row['data2'] .'",';
+		$data1 = $data1 . '"'. $row['Price'].'",';
+		$date = $date . '"'. $row['PriceDate'] .'",';
 	}
 
 	$data1 = trim($data1,",");
-	$data2 = trim($data2,",");
+	//$data2 = trim($data2,",");
+	$date = trim($date,",");
 ?>
 	<div class="container">	
 	    <h1>USE CHART.JS WITH MYSQL DATASETS</h1>       
@@ -220,7 +222,7 @@ Highcharts.chart('container1', {
     			var myChart = new Chart(ctx, {
         		type: 'line',
 		        data: {
-		            labels: ["1JAN21","2JAN21","3JAN21","4JAN21","5JAN21","6JAN21"],
+		            labels: [<?php echo $date; ?>],
 		            datasets: 
 		            [{
 		                label: 'Data 1',
@@ -228,15 +230,16 @@ Highcharts.chart('container1', {
 		                backgroundColor: 'transparent',
 		                borderColor:'rgba(255,99,132)',
 		                borderWidth: 3
-		            },
-
-		            {
-		            	label: 'Data 2',
-		                data: [<?php echo $data2; ?>],
-		                backgroundColor: 'transparent',
-		                borderColor:'rgba(0,255,255)',
-		                borderWidth: 3	
-		            }]
+		            }
+			     //,
+		            //{
+		            //	label: 'Data 2',
+		            //    data: [<?php echo $data2; ?>],
+		            //    backgroundColor: 'transparent',
+		            //    borderColor:'rgba(0,255,255)',
+		            //    borderWidth: 3	
+		            //}
+			    ]
 		        },
 		     
 		        options: {
