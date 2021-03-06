@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 25</h1>
+<h1>S&P500 Performance (PHP) updated 26</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -84,32 +84,80 @@ Highcharts.chart('container1', {
         },
         labels: [{
             point: {
-                xAxis: '06-03-2021',
+                xAxis: 0,
                 yAxis: 0,
-                x: '06-03-2021',
+                x: 27.98,
+                y: 255
+            },
+            text: 'Arbois'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 45.5,
+                y: 611
+            },
+            text: 'Montrond'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 100,
                 y: 100
             },
             text: 'Mont-sur-Monnet'
         }, {
             point: {
-                xAxis: '06-03-2021',
+                xAxis: 0,
                 yAxis: 0,
-                x: '07-03-2021',
+                x: 150,
                 y: 150
             },
-            //x: -10,
+            x: -10,
             text: 'Bonlieu'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 129.5,
+                y: 382
+            },
+            text: 'Chassal'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 159,
+                y: 443
+            },
+            text: 'Saint-Claude'
         }]
     }, {
         labels: [{
             point: {
-                xAxis: '06-03-2021',
+                xAxis: 0,
                 yAxis: 0,
-                x: '08-03-2021',
+                x: 200,
                 y: 200
             },
-            //x: -30,
+            x: -30,
             text: 'Col de la Joux'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 138.5,
+                y: 748
+            },
+            text: 'Côte de Viry'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 176.4,
+                y: 1202
+            },
+            text: 'Montée de la Combe<br>de Laisia Les Molunes'
         }]
     }, {
         labelOptions: {
@@ -121,9 +169,33 @@ Highcharts.chart('container1', {
                 fontSize: '0.8em',
                 textOutline: '1px white'
             }
-        }
-    }
-		 ],
+        },
+        labels: [{
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 96.2,
+                y: 783
+            },
+            text: '6.1 km climb<br>4.6% on avg.'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 134.5,
+                y: 540
+            },
+            text: '7.6 km climb<br>5.2% on avg.'
+        }, {
+            point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: 172.2,
+                y: 925
+            },
+            text: '11.7 km climb<br>6.4% on avg.'
+        }]
+    }],
 
     xAxis: {
         //labels: {
