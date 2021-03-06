@@ -121,7 +121,7 @@ Highcharts.chart('container1', {
                 fontSize: '0.8em',
                 textOutline: '1px white'
             }
-        },
+        }
     }
 		 ],
 
