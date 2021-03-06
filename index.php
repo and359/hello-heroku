@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated0</h1>
+<h1>S&P500 Performance (PHP) updated1</h1>
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -2162,7 +2162,6 @@ Highcharts.chart('container1', {
             }
         },
         data: {
-		            labels: [1,2,3,4,5,6,7,8,9],
 		            datasets: 
 		            [{
 		                label: 'Data 1',
