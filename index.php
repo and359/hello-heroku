@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated1</h1>
+<h1>S&P500 Performance (PHP) updated2</h1>
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -2161,16 +2161,7 @@ Highcharts.chart('container1', {
                 enabled: false
             }
         },
-        data: {
-		            datasets: 
-		            [{
-		                label: 'Data 1',
-		                data: [<?php echo $data1; ?>],
-		                backgroundColor: 'transparent',
-		                borderColor:'rgba(255,99,132)',
-		                borderWidth: 3
-		            }]
-		        },
+        data: [[100, 100],[200, 200]],
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
