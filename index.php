@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 35</h1>
+<h1>S&P500 Performance (PHP) updated 36</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -237,9 +237,8 @@ Highcharts.chart('container1', {
 		        options: {
 		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
 		            tooltips:{mode: 'index'},
-		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}},
-				title: {text: '2017 Tour de France Stage 8: Dole - Station des Rousses'}
-		        }
+		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
+		        }, title: {text: '2017 Tour de France Stage 8: Dole - Station des Rousses'}
 				
     }
 					       );
