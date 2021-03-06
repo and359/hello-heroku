@@ -10,7 +10,17 @@
 
 	
 	<!--username-->	
-	
+	<script>
+$(document).ready(function(){
+	var user_name = $('span.element_username').text();
+	var user_id = Number($("#enjin-bar").data("user_id"));
+	if (user_id > 0){
+		document.getElementById("displayUser").innerHTML='Welcome ' + user_name + '';
+	} else {
+		document.getElementById("displayUser").innerHTML='Welcome Guest';}
+	});
+</script>
+	<span id="displayUser"></span>
 	<!--end of username-->	
 	
 	
