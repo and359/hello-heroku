@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 21</h1>
+<h1>S&P500 Performance (PHP) updated 22</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -150,10 +150,10 @@ Highcharts.chart('container1', {
     }],
 
     xAxis: {
-        labels: {
-            format: '{value}'
-        },
-        minRange: 0,
+        //labels: {
+            //format: '{value}'
+        //},
+        //minRange: 0,
         title: {
             text: 'Distance'
         },
@@ -175,8 +175,8 @@ Highcharts.chart('container1', {
     },
 
     tooltip: {
-        headerFormat: 'Distance: {point.x:.1f} km<br>',
-        pointFormat: '{point.y} m a. s. l.',
+        headerFormat: 'Distance: {point.x:.1f} Buy/Sell<br>',
+        pointFormat: '{point.y} Trade Px',
         shared: true
     },
 
