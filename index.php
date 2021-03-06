@@ -1,7 +1,7 @@
 
 <script async src="//jsfiddle.net/beaver71/3qkcLk6v/embed/"></script>
    
-   <canvas id="ctx">
+   
 <script>
 
    
@@ -55,4 +55,3 @@ var chart = new Chart(ctx, {
 
 
       </script>
-      </canvas>
