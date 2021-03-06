@@ -43,6 +43,49 @@
 </div>
 </div>
 
+	
+	
+	
+	
+	
+	
+<!--to delete-->	
+	
+	<?php
+	/* Database connection settings */
+	$host = 'us-cdbr-east-03.cleardb.com';
+	$user = 'b8a00bf633cf68';
+	$pass = '1a8113a0';
+	$db = 'heroku_69459908ed082cc';
+	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+
+	$data1 = '';
+	$data2 = '';
+
+	//query to get data from the table
+	$sql = "SELECT * FROM `datasets` ";
+    $result = mysqli_query($mysqli, $sql);
+
+	//loop through the returned data
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data1 = $data1 . '"'. $row['data1'].'",';
+		$data2 = $data2 . '"'. $row['data2'] .'",';
+	}
+
+	$data1 = trim($data1,",");
+	$data2 = trim($data2,",");
+?>
+	
+	
+<!--to delete-->	
+	
+	
+	
+	
+	
+	
+	
 <script type="text/javascript">
 // Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
 var elevationData = [
