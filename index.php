@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated11</h1>
+<h1>S&P500 Performance (PHP) updated12</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -53,10 +53,11 @@ Highcharts.chart('container1', {
         type: 'area',
         zoomType: 'x',
         panning: true,
-        panKey: 'shift',
-        scrollablePlotArea: {
-            minWidth: 1000
-        }
+        panKey: 'shift'
+	    //,
+        //scrollablePlotArea: {
+        //    minWidth: 1000
+        //} -->
     },
 
     caption: {
@@ -243,7 +244,7 @@ Highcharts.chart('container1', {
         fillOpacity: 0.5,
         name: 'Elevation',
         marker: {
-            enabled: false
+            enabled: true
         },
         threshold: null
     }]
@@ -252,7 +253,7 @@ Highcharts.chart('container1', {
 
 	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
-	
+<br><br>	
 	
 	
 	
@@ -319,7 +320,7 @@ Highcharts.chart('container1', {
 			</script>
 	    </div>
 	
-	***line chart end <br>
+	***line chart end <br><br>
 	
 	
 	
