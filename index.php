@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 4</h1>
+<h1>S&P500 Performance (PHP) updated 5</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -263,9 +263,10 @@ Highcharts.chart('container1', {
 	
 	
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
-******Annotation Chart
+<br>
+	******Annotation Chart
 	<!--annotation with vertical line-->
-
+<!--
 	   <canvas id="ctx"></canvas>
 	<script>
 		var marketing = ['2017-08-05', '2017-08-12'];
@@ -315,8 +316,8 @@ var chart = new Chart(ctx, {
 });
 	
 	</script>
-
-******End of Annotation Chart
+-->
+******End of Annotation Chart<br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
