@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 29</h1>
+<h1>S&P500 Performance (PHP) updated 30</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -252,13 +252,10 @@ Highcharts.chart('container1', {
 		var chart = new Chart(ctx, {
 		   type: 'line',
 		   data: {
-		      //labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
 			labels: [<?php echo $date; ?>],
-			//labels: ['2020-06-15', '2020-06-16', '2020-06-17', '2020-06-30', '2020-07-15'],
 		      datasets: [{
-			 label: 'LINE',
+			 label: 'Close Price',
 			 data: [<?php echo $data1; ?>],
-			  //data: [60, 70, 80, 70, 100],
 			 backgroundColor: 'rgba(0, 119, 290, 0.2)',
 			 borderColor: 'rgba(0, 119, 290, 0.6)'
 		      }]
