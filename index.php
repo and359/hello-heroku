@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 1</h1>
+<h1>S&P500 Performance (PHP) updated 2</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -227,43 +227,22 @@ Highcharts.chart('container1', {
 	    <h1><?php echo $data2; ?> Share Price</h1>       
 			<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 1px;"></canvas>
 
-			<script>
-				var marketing = ['2020-04-14', '2020-10-02'];
-				var amount = [50, 70];
-// populate 'annotations' array dynamically based on 'marketing'
-				var annotations = marketing.map(function(date, index) {
-   					return {
-      					type: 'line',
-      					id: 'vline' + index,
-      					mode: 'vertical',
-      					scaleID: 'x-axis-0',
-      					value: date,
-      					borderColor: 'green',
-      					borderWidth: 1,
-      					label: {
-         				enabled: true,
-         				position: "center",
-         				content: amount[index]
-      					}
-   					}
-					});
-				
-				
+			<script>				
 				
 				
 				var ctx = document.getElementById("chart").getContext('2d');
     			var myChart = new Chart(ctx, {
         		type: 'line',
-			title: {text: '2017 Tour de France Stage 8: Dole - Station des Rousses'},
 		        data: {
 		            labels: [<?php echo $date; ?>],
 		            datasets: 
 		            [{
 		                label: 'Data 1',
 		                data: [<?php echo $data1; ?>],
-		                backgroundColor: 'transparent',
-		                borderColor:'rgba(0,255,255)',
-		                borderWidth: 3
+		                backgroundColor: 'transparent'
+				    //,
+		                //borderColor:'rgba(0,255,255)',
+		                //borderWidth: 1
 		            }
 			    ]
 		        },
@@ -271,8 +250,7 @@ Highcharts.chart('container1', {
 		        options: {
 		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
 		            tooltips:{mode: 'index'},
-		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}},
-			annotation: {drawTime: 'afterDatasetsDraw',annotations: annotations}
+		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
 		        }
 				
     }
