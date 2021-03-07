@@ -54,42 +54,59 @@
 	<body>	   
 	    <div class="container">	
 	    <h1>USE CHART.JS WITH MYSQL DATASETS</h1>       
-			<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
-
+			<!--<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
+			<canvas id="ctx"></canvas>
 
 	<!-- data 1: 1, 4, 3, 6, 2, 0, 3, 1, 4, 3, 6, 2, 0, 3 -->
 	<!-- data 2: 2, 5, 5, 7, 4, 3, 2, 2, 5, 5, 7, 4, 3, 2 -->
 
 			<script>
-				var ctx = document.getElementById("chart").getContext('2d');
-    			var myChart = new Chart(ctx, {
-        		type: 'line',
-		        data: {
-		            labels: [1,2,3,4,5,6,7,8,9],
-		            datasets: 
-		            [{
-		                label: 'Data 1',
-		                data: [<?php echo $data1; ?>],
-		                backgroundColor: 'transparent',
-		                borderColor:'rgba(255,99,132)',
-		                borderWidth: 3
-		            },
+			var marketing = ['2017-08-05', '2017-08-12'];
+			var amount = [50, 70];
+			// populate 'annotations' array dynamically based on 'marketing'
+			var annotations = marketing.map(function(date, index) {
+			   return {
+			      type: 'line',
+			      id: 'vline' + index,
+			      mode: 'vertical',
+			      scaleID: 'x-axis-0',
+			      value: date,
+			      borderColor: 'green',
+			      borderWidth: 1,
+			      label: {
+				 enabled: true,
+				 position: "center",
+				 content: amount[index]
+			      }
+			   }
+			});
 
-		            {
-		            	label: 'Data 2',
-		                data: [<?php echo $data2; ?>],
-		                backgroundColor: 'transparent',
-		                borderColor:'rgba(0,255,255)',
-		                borderWidth: 3	
-		            }]
-		        },
-		     
-		        options: {
-		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-		            tooltips:{mode: 'index'},
-		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-		        }
-		    });
+			var chart = new Chart(ctx, {
+			   type: 'line',
+			   data: {
+			      labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
+			      datasets: [{
+				 label: 'LINE',
+				 data: [3, 1, 4, 2, 5],
+				 backgroundColor: 'rgba(0, 119, 290, 0.2)',
+				 borderColor: 'rgba(0, 119, 290, 0.6)'
+			      }]
+			   },
+			   options: {
+			      scales: {
+				 yAxes: [{
+				    ticks: {
+				       beginAtZero: true
+				    }
+				 }]
+			      },
+			      annotation: {
+				 drawTime: 'afterDatasetsDraw',
+				 annotations: annotations
+			      }
+			   }
+			});
+
 			</script>
 	    </div>
 	    
