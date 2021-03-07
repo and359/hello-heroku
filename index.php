@@ -1,29 +1,3 @@
-<?php
-	/* Database connection settings */
-	$host = 'us-cdbr-east-03.cleardb.com';
-	$user = 'b8a00bf633cf68';
-	$pass = '1a8113a0';
-	$db = 'heroku_69459908ed082cc';
-	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
-
-	$data1 = '';
-	$data2 = '';
-
-	//query to get data from the table
-	$sql = "SELECT * FROM `datasets` ";
-    $result = mysqli_query($mysqli, $sql);
-
-	//loop through the returned data
-	while ($row = mysqli_fetch_array($result)) {
-
-		$data1 = $data1 . '"'. $row['data1'].'",';
-		$data2 = $data2 . '"'. $row['data2'] .'",';
-	}
-
-	$data1 = trim($data1,",");
-	$data2 = trim($data2,",");
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -31,7 +5,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 		<title>Accelerometer data</title>
 
-		<style type="text/css">			
+		<!--<style type="text/css">			
 			body{
 				font-family: Arial;
 			    margin: 80px 100px 10px 100px;
@@ -47,13 +21,13 @@
 				border: #555652 1px solid;
 				padding: 10px;
 			}
-		</style>
+		</style> -->
 
 	</head>
 
 	<body>	   
 	    <div class="container">	
-	    <h1>USE CHART.JS WITH MYSQL DATASETS</h1>       
+	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 1</h1>       
 			<!--<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 			<canvas id="ctx"></canvas>
 
