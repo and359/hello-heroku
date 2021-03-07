@@ -27,8 +27,11 @@
 	</head>
 
 	<body>	   
-	    <div class="container">	
-	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 5</h1>       
+		
+	    <div class="container">	</div>
+		    
+		    
+	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 6</h1>       
 			<!--<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 			<canvas id="ctx"></canvas>
 
@@ -81,7 +84,7 @@
 			});
 
 			</script>
-	    </div>
+
 	    
 	</body>
 </html>
