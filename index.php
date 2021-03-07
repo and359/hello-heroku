@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 38</h1>
+<h1>S&P500 Performance (PHP) updated 39</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -200,6 +200,7 @@ Highcharts.chart('container1', {
 	$date = '';
 	$data3 = '';
 	$data4 = '';
+	$data5 = '';
 
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
@@ -227,10 +228,12 @@ Highcharts.chart('container1', {
 
 		$data3 = $data3 . '"'. $row['TradeDate'].'",';
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
+		$data5 = $data5 . '"'. $row['BuySell'].'",';
 	}
 
 	$data3 = trim($data3,",");
 	$data4 = trim($data4,",");
+	$data5 = trim($data5,",");
 	
 	?>
 		<!--annotation with vertical line-->
@@ -246,6 +249,24 @@ Highcharts.chart('container1', {
 		
 		// populate 'annotations' array dynamically based on 'marketing'
 		var annotations = marketing.map(function(date, index) {
+			if (marketing[1]=='06/03/2020'){
+		   return {
+		      type: 'line',
+		      id: 'vline' + index,
+		      mode: 'vertical',
+		      scaleID: 'x-axis-0',
+		      value: date,
+		      borderColor: 'green',
+		      borderWidth: 1,
+		      label: {
+			 enabled: true,
+			 position: "bottom",
+			 content: amount[index]
+		      }
+		   }
+			    }	else {
+			    
+			    
 		   return {
 		      type: 'line',
 		      id: 'vline' + index,
@@ -260,6 +281,8 @@ Highcharts.chart('container1', {
 			 content: amount[index]
 		      }
 		   }
+			    
+			    }
 		});
 
 		var chart = new Chart(ctx, {
