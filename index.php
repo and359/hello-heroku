@@ -27,7 +27,8 @@
 	</head>
 
 	<body>	   
-		
+		<script async src="//jsfiddle.net/beaver71/3qkcLk6v/embed/"></script>
+		<!--
 	    <div class="container">	</div>
 	    
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -62,7 +63,7 @@
 		
 		
 		    
-	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 7</h1>       
+	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 8</h1>       
 			<!--<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 			<canvas id="ctx"></canvas>
 
@@ -116,6 +117,6 @@
 
 			</script>
 
-	    
+-->	    
 	</body>
 </html>
