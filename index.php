@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 6</h1>
+<h1>S&P500 Performance (PHP) updated 7</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -269,8 +269,8 @@ Highcharts.chart('container1', {
 
 <!--	   <canvas id="ctx"></canvas>	-->
 	<script>
-		var marketing = ['2017-08-05', '2017-08-12'];
-var amount = [50, 70];
+		var marketing = [<?php echo $date; ?>];
+var amount = [<?php echo $data1; ?>];
 // populate 'annotations' array dynamically based on 'marketing'
 var annotations = marketing.map(function(date, index) {
    return {
@@ -292,10 +292,10 @@ var annotations = marketing.map(function(date, index) {
 var chart = new Chart(ctx, {
    type: 'line',
    data: {
-      labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
+      labels: [<?php echo $date; ?>],
       datasets: [{
          label: 'LINE',
-         data: [3, 1, 4, 2, 5],
+         data: [<?php echo $data1; ?>],
          backgroundColor: 'rgba(0, 119, 290, 0.2)',
          borderColor: 'rgba(0, 119, 290, 0.6)'
       }]
