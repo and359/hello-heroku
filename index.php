@@ -16,7 +16,7 @@
 		
 		
 		
-		<!--<style type="text/css">			
+		<style type="text/css">			
 			body{
 				font-family: Arial;
 			    margin: 80px 100px 10px 100px;
@@ -32,12 +32,12 @@
 				border: #555652 1px solid;
 				padding: 10px;
 			}
-		</style> -->
+		</style> 
 
 	</head>
 
 	<body>	   
-		update 1
+		update 2
 		
 	   <canvas id="ctx"></canvas>
 	<script>
