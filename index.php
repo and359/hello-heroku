@@ -269,8 +269,8 @@ Highcharts.chart('container1', {
 
 <!--	   <canvas id="ctx"></canvas>	-->
 	<script>
-		var marketing = ['2020-06-16'];
-var amount = [100];
+		var marketing = ['2020-06-16', '2020-06-30'];
+var amount = [50, 70];
 // populate 'annotations' array dynamically based on 'marketing'
 var annotations = marketing.map(function(date, index) {
    return {
