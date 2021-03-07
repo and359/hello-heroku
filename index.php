@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 15</h1>
+<h1>S&P500 Performance (PHP) updated 16</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -226,7 +226,7 @@ Highcharts.chart('container1', {
 		<h1><?php echo $data2; ?> Share Price</h1>
 	   <canvas id="ctx"></canvas>
 	<script>
-		var marketing = ['2017-08-05', '2017-08-12'];
+		var marketing = ['2020-06-16', '2020-06-30'];
 var amount = [50, 70];
 // populate 'annotations' array dynamically based on 'marketing'
 var annotations = marketing.map(function(date, index) {
