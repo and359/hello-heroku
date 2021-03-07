@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 28</h1>
+<h1>S&P500 Performance (PHP) updated 29</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -184,8 +184,6 @@ Highcharts.chart('container1', {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 <br><br>	
 	
-	
-	
 	***line chart 
 
 	<!--mysql-->
@@ -225,60 +223,60 @@ Highcharts.chart('container1', {
 		<!--annotation with vertical line-->
 	<div class="container">	
 			
-		<h1><?php echo $data2; ?> Share Price</h1>
-	   <!--<canvas id="ctx"></canvas>-->
+		<h1><?php echo $data2; ?> Share Price</h1>	   
 		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 	<script>
 		//var marketing = [<?php echo $date; ?>];
 		var marketing = ['26/03/2020','30/06/2020'];
 		//var amount = [<?php echo $data1; ?>];
 		var amount = ['26/03/2020 Buy Px: 80', '30/06/2020 Buy Px: 100'];
-// populate 'annotations' array dynamically based on 'marketing'
-var annotations = marketing.map(function(date, index) {
-   return {
-      type: 'line',
-      id: 'vline' + index,
-      mode: 'vertical',
-      scaleID: 'x-axis-0',
-      value: date,
-      borderColor: 'green',
-      borderWidth: 1,
-      label: {
-         enabled: true,
-         position: "center",
-         content: amount[index]
-      }
-   }
-});
+		
+		// populate 'annotations' array dynamically based on 'marketing'
+		var annotations = marketing.map(function(date, index) {
+		   return {
+		      type: 'line',
+		      id: 'vline' + index,
+		      mode: 'vertical',
+		      scaleID: 'x-axis-0',
+		      value: date,
+		      borderColor: 'green',
+		      borderWidth: 1,
+		      label: {
+			 enabled: true,
+			 position: "center",
+			 content: amount[index]
+		      }
+		   }
+		});
 
-var chart = new Chart(ctx, {
-   type: 'line',
-   data: {
-      //labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
-	labels: [<?php echo $date; ?>],
-	//labels: ['2020-06-15', '2020-06-16', '2020-06-17', '2020-06-30', '2020-07-15'],
-      datasets: [{
-         label: 'LINE',
-         data: [<?php echo $data1; ?>],
-	  //data: [60, 70, 80, 70, 100],
-         backgroundColor: 'rgba(0, 119, 290, 0.2)',
-         borderColor: 'rgba(0, 119, 290, 0.6)'
-      }]
-   },
-   options: {
-      scales: {
-         yAxes: [{
-            ticks: {
-               beginAtZero: true
-            }
-         }]
-      },
-      annotation: {
-         drawTime: 'afterDatasetsDraw',
-         annotations: annotations
-      }
-   }
-});
+		var chart = new Chart(ctx, {
+		   type: 'line',
+		   data: {
+		      //labels: ['2017-08-02', '2017-08-05', '2017-08-09', '2017-08-12', '2017-08-14'],
+			labels: [<?php echo $date; ?>],
+			//labels: ['2020-06-15', '2020-06-16', '2020-06-17', '2020-06-30', '2020-07-15'],
+		      datasets: [{
+			 label: 'LINE',
+			 data: [<?php echo $data1; ?>],
+			  //data: [60, 70, 80, 70, 100],
+			 backgroundColor: 'rgba(0, 119, 290, 0.2)',
+			 borderColor: 'rgba(0, 119, 290, 0.6)'
+		      }]
+		   },
+		   options: {
+		      scales: {
+			 yAxes: [{
+			    ticks: {
+			       beginAtZero: true
+			    }
+			 }]
+		      },
+		      annotation: {
+			 drawTime: 'afterDatasetsDraw',
+			 annotations: annotations
+		      }
+		   }
+		});
 	
 	</script>	
 	</div>
@@ -288,15 +286,6 @@ var chart = new Chart(ctx, {
 	
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 <br>
-	******Annotation Chart
-	<!--annotation with vertical line-->
-
-<!--	   <canvas id="ctx"></canvas>	-->
-	
-
-******End of Annotation Chart<br>
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	
 <style>
