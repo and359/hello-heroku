@@ -28,12 +28,12 @@
 
 	<body>	   
 	    <div class="container">	
-	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 4</h1>       
+	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 5</h1>       
 			<!--<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 			<canvas id="ctx"></canvas>
 
 
-			<script>
+			<script type="text/javascript">
 			var marketing = ['2017-08-05', '2017-08-12'];
 			var amount = [50, 70];
 			// populate 'annotations' array dynamically based on 'marketing'
