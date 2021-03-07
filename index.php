@@ -17,7 +17,7 @@
 <body>
 
 	
-<h1>S&P500 Performance (PHP) updated 42</h1>
+<h1>S&P500 Performance (PHP) updated 1</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -220,12 +220,12 @@ Highcharts.chart('container1', {
 	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
     $result = mysqli_query($mysqli, $sql);
 	$row = mysqli_fetch_array($result);
-	$data2 = $data2 . '"'. $row['Ticker'].'",';
+	$data2 = $data2 . $row['Ticker'];
 	
 ?>
 	<div class="container">	
 	    <h1><?php echo $data2; ?> Share Price</h1>       
-			<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+			<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 1px;"></canvas>
 
 			<script>
 				var marketing = ['2020-04-14', '2020-10-02'];
