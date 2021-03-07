@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 30</h1>
+<h1>S&P500 Performance (PHP) updated 31</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -198,6 +198,8 @@ Highcharts.chart('container1', {
 	$data1 = '';
 	$data2 = '';
 	$date = '';
+	$data3 = '';
+	$data4 = '';
 
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
@@ -219,6 +221,17 @@ Highcharts.chart('container1', {
 	$row = mysqli_fetch_array($result);
 	$data2 = $data2 . $row['Ticker'];
 	
+	$sql = "select Ticker from `heroku_69459908ed082cc`.`buy_sell`;";
+    	$result = mysqli_query($mysqli, $sql);
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data3 = $data3 . '"'. $row['TradeDate'].'",';
+		$data4 = $data4 . '"'. $row['Remarks'].'",';
+	}
+
+	$data3 = trim($data3,",");
+	$data4 = trim($data4,",");
+	
 	?>
 		<!--annotation with vertical line-->
 	<div class="container">	
@@ -227,9 +240,9 @@ Highcharts.chart('container1', {
 		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 	<script>
 		//var marketing = [<?php echo $date; ?>];
-		var marketing = ['26/03/2020','30/06/2020'];
+		var marketing = [<?php echo $data3; ?>];
 		//var amount = [<?php echo $data1; ?>];
-		var amount = ['26/03/2020 Buy Px: 80', '30/06/2020 Buy Px: 100'];
+		var amount = [<?php echo $data4; ?>];
 		
 		// populate 'annotations' array dynamically based on 'marketing'
 		var annotations = marketing.map(function(date, index) {
