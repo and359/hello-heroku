@@ -2,7 +2,8 @@
 <html>
 	<head>
     	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+		<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>-->
+		<script async src="//jsfiddle.net/beaver71/3qkcLk6v/embed/"></script>
 		<title>Accelerometer data</title>
 
 		<!--<style type="text/css">			
@@ -27,7 +28,7 @@
 
 	<body>	   
 	    <div class="container">	
-	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 2</h1>       
+	    <h1>USE CHART.JS WITH MYSQL DATASETS Refresh 3</h1>       
 			<!--<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 			<canvas id="ctx"></canvas>
 
