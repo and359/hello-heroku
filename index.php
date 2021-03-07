@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 14</h1>
+<h1>S&P500 Performance (PHP) updated 15</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -188,8 +188,42 @@ Highcharts.chart('container1', {
 	
 	***line chart 
 
-		<!--annotation with vertical line-->
+	<!--mysql-->
+	<?php
+	/* Database connection settings */
+	$host = 'us-cdbr-east-03.cleardb.com';
+	$user = 'b8a00bf633cf68';
+	$pass = '1a8113a0';
+	$db = 'heroku_69459908ed082cc';
+	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 
+	$data1 = '';
+	$data2 = '';
+	$date = '';
+
+	//query to get data from the table
+	$sql = "SELECT * FROM `backtest`;";
+    	$result = mysqli_query($mysqli, $sql);
+
+	//loop through the returned data
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data1 = $data1 . '"'. $row['Price'].'",';
+		$date = $date . '"'. $row['PriceDate'] .'",';
+	}
+
+	$data1 = trim($data1,",");
+	//$data2 = trim($data2,",");
+	$date = trim($date,",");
+	
+	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
+    	$result = mysqli_query($mysqli, $sql);
+	$row = mysqli_fetch_array($result);
+	$data2 = $data2 . $row['Ticker'];
+	
+	?>
+		<!--annotation with vertical line-->
+		<h1><?php echo $data2; ?> Share Price</h1>
 	   <canvas id="ctx"></canvas>
 	<script>
 		var marketing = ['2017-08-05', '2017-08-12'];
