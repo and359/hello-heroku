@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 19</h1>
+<h1>S&P500 Performance (PHP) updated 20</h1>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -226,7 +226,8 @@ Highcharts.chart('container1', {
 	<div class="container">	
 			
 		<h1><?php echo $data2; ?> Share Price</h1>
-	   <canvas id="ctx"></canvas><canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+	   <!--<canvas id="ctx"></canvas>-->
+		<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 	<script>
 		var marketing = [<?php echo $date; ?>];
 var amount = [<?php echo $data1; ?>];
