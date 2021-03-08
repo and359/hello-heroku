@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 11</h1>
+<h1>S&P500 Performance (PHP) updated 12</h1>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -99,22 +99,6 @@
 		//var amount = [<?php echo $data1; ?>];
 		var amount = [<?php echo $data4; ?>];
 		
-		
-		
-		var printObj = function(obj) { 
-                var string = ''; 
-  
-                for(var prop in obj) { 
-                    if(typeof obj[prop] == 'string') { 
-                        string+= prop + ': ' + obj[prop]+'; </br>'; 
-                    } 
-                    else { 
-                        string+= prop + ': { </br>' + print(obj[prop]) + '}'; 
-                    } 
-                } 
-  
-                return string; 
-            } 
 		
 		// populate 'annotations' array dynamically based on 'marketing'
 		var annotations = marketing.map(function(date, index) {
@@ -238,41 +222,7 @@
 		   }
 			    
 			    }
-		});
-	
-		
-		
-		
-		
-		
-		
-            var el_down = document.getElementById("GFG_DOWN"); 
-              
-            var GFG_object = {  
-                prop_1: 'val_11',  
-                prop_2: 'val_12',  
-                prop_3: 'val_13' 
-            }; 
-              
-            var printObj = function(obj) { 
-                var string = ''; 
-  
-                for(var prop in obj) { 
-                    if(typeof obj[prop] == 'string') { 
-                        string+= prop + ': ' + obj[prop]+'; </br>'; 
-                    } 
-                    else { 
-                        string+= prop + ': { </br>' + print(obj[prop]) + '}'; 
-                    } 
-                } 
-  
-                return string; 
-            } 
-            function gfg_Run() {  
-                el_down.innerHTML = printObj(GFG_object); 
-            } 
-        </script>
-	
+		});	
 	
 	
 	
