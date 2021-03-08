@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 10</h1>
+<h1>S&P500 Performance (PHP) updated 11</h1>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -119,7 +119,7 @@
 		// populate 'annotations' array dynamically based on 'marketing'
 		var annotations = marketing.map(function(date, index) {
 			for(var prop in date) {
-			if (date[prop]=='01/03/2021'){
+			if (date[prop]=='02/03/2021'){
 		   return {
 		      type: 'line',
 		      id: 'vline' + index,
