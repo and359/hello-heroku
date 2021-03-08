@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 2</h1>
+<h1>S&P500 Performance (PHP) updated 3</h1>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -180,6 +180,54 @@
         </p> 
           
         <script> 
+		var marketing = [<?php echo $data3; ?>];
+		//var amount = [<?php echo $data1; ?>];
+		var amount = [<?php echo $data4; ?>];
+		
+		// populate 'annotations' array dynamically based on 'marketing'
+		var annotations = marketing.map(function(date, index) {
+			if (marketing[1]=='30/07/2020'){
+		   return {
+		      type: 'line',
+		      id: 'vline' + index,
+		      mode: 'vertical',
+		      scaleID: 'x-axis-0',
+		      value: date,
+		      borderColor: 'green',
+		      borderWidth: 1,
+		      label: {
+			 enabled: true,
+			 position: "bottom",
+			 content: amount[index]
+		      }
+		   }
+			    }	else {
+			    
+			    
+		   return {
+		      type: 'line',
+		      id: 'vline' + index,
+		      mode: 'vertical',
+		      scaleID: 'x-axis-0',
+		      value: date,
+		      borderColor: 'red',
+		      borderWidth: 1,
+		      label: {
+			 enabled: true,
+			 position: "top",
+			 content: amount[index]
+		      }
+		   }
+			    
+			    }
+		});
+	
+		
+		
+		
+		
+		
+		
             var el_down = document.getElementById("GFG_DOWN"); 
               
             var GFG_object = {  
@@ -203,7 +251,7 @@
                 return string; 
             } 
             function gfg_Run() {  
-                el_down.innerHTML = printObj(GFG_object); 
+                el_down.innerHTML = printObj(annotations); 
             } 
         </script>
 	
