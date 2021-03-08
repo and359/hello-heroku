@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 4</h1>
+<h1>S&P500 Performance (PHP) updated 6</h1>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -94,49 +94,11 @@
 		<h1><?php echo $data2; ?> Share Price</h1>	   
 		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 	<script>
-		//var marketing = [<?php echo $date; ?>];
-		var marketing = [<?php echo $data3; ?>];
-		//var amount = [<?php echo $data1; ?>];
-		var amount = [<?php echo $data4; ?>];
+		
+		
 		
 		// populate 'annotations' array dynamically based on 'marketing'
-		var annotations = marketing.map(function(date, index) {
-			if (marketing[1]=='30/07/2020'){
-		   return {
-		      type: 'line',
-		      id: 'vline' + index,
-		      mode: 'vertical',
-		      scaleID: 'x-axis-0',
-		      value: date,
-		      borderColor: 'green',
-		      borderWidth: 1,
-		      label: {
-			 enabled: true,
-			 position: "bottom",
-			 content: amount[index]
-		      }
-		   }
-			    }	else {
-			    
-			    
-		   return {
-		      type: 'line',
-		      id: 'vline' + index,
-		      mode: 'vertical',
-		      scaleID: 'x-axis-0',
-		      value: date,
-		      borderColor: 'red',
-		      borderWidth: 1,
-		      label: {
-			 enabled: true,
-			 position: "top",
-			 content: amount[index]
-		      }
-		   }
-			    
-			    }
-		});
-
+		
 		var chart = new Chart(ctx, {
 		   type: 'line',
 		   data: {
