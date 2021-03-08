@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 3</h1>
+<h1>S&P500 Performance (PHP) updated 4</h1>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -251,7 +251,7 @@
                 return string; 
             } 
             function gfg_Run() {  
-                el_down.innerHTML = printObj(annotations); 
+                el_down.innerHTML = printObj(String(annotations)); 
             } 
         </script>
 	
