@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 8</h1>
+<h1>S&P500 Performance (PHP) updated 9</h1>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -99,9 +99,27 @@
 		//var amount = [<?php echo $data1; ?>];
 		var amount = [<?php echo $data4; ?>];
 		
+		
+		
+		var printObj = function(obj) { 
+                var string = ''; 
+  
+                for(var prop in obj) { 
+                    if(typeof obj[prop] == 'string') { 
+                        string+= prop + ': ' + obj[prop]+'; </br>'; 
+                    } 
+                    else { 
+                        string+= prop + ': { </br>' + print(obj[prop]) + '}'; 
+                    } 
+                } 
+  
+                return string; 
+            } 
+		
 		// populate 'annotations' array dynamically based on 'marketing'
 		var annotations = marketing.map(function(date, index) {
-			if (marketing[1]=='30/07/2020'){
+			for(var prop in date) {
+			if (date[prop]=='30/07/2020'){
 		   return {
 		      type: 'line',
 		      id: 'vline' + index,
@@ -134,7 +152,7 @@
 		      }
 		   }
 			    
-			    }
+			    }}
 		});
 		
 		var chart = new Chart(ctx, {
