@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 3</h1>
+<h1>S&P500 Performance (PHP) updated 4</h1>
 
 	<button onclick="myFunction()">Try it</button>
 
@@ -28,8 +28,44 @@
 	var numbers = [4, 9, 16, 25];
 
 	function myFunction() {
-	  x = document.getElementById("anno")
-	  x.innerHTML = numbers.map(annotations);
+	  x = document.getElementById("demo")
+	  x.innerHTML = marketing.map(function(date, index) {
+			if (marketing[1]=='30/07/2020'){
+		   return {
+		      type: 'line',
+		      id: 'vline' + index,
+		      mode: 'vertical',
+		      scaleID: 'x-axis-0',
+		      value: date,
+		      borderColor: 'green',
+		      borderWidth: 1,
+		      label: {
+			 enabled: true,
+			 position: "bottom",
+			 content: amount[index]
+		      }
+		   }
+			    }	else {
+			    
+			    
+		   return {
+		      type: 'line',
+		      id: 'vline' + index,
+		      mode: 'vertical',
+		      scaleID: 'x-axis-0',
+		      value: date,
+		      borderColor: 'red',
+		      borderWidth: 1,
+		      label: {
+			 enabled: true,
+			 position: "top",
+			 content: amount[index]
+		      }
+		   }
+			    
+			    }
+		});
+
 	}
 	</script>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -97,7 +133,6 @@
 		<h1><?php echo $data2; ?> Share Price</h1>	   
 		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 		
-	<p id="anno"></p>
 	<script>
 		//var marketing = [<?php echo $date; ?>];
 		var marketing = [<?php echo $data3; ?>];
