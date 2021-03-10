@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 4</h1>
+<h1>S&P500 Performance (PHP) updated 5</h1>
 
 	<button onclick="myFunction()">Try it</button>
 
@@ -32,34 +32,14 @@
 	  x.innerHTML = marketing.map(function(date, index) {
 			if (marketing[1]=='30/07/2020'){
 		   return {
-		      type: 'line',
-		      id: 'vline' + index,
-		      mode: 'vertical',
-		      scaleID: 'x-axis-0',
-		      value: date,
-		      borderColor: 'green',
-		      borderWidth: 1,
-		      label: {
-			 enabled: true,
-			 position: "bottom",
-			 content: amount[index]
+		      'green'
 		      }
 		   }
 			    }	else {
 			    
 			    
 		   return {
-		      type: 'line',
-		      id: 'vline' + index,
-		      mode: 'vertical',
-		      scaleID: 'x-axis-0',
-		      value: date,
-		      borderColor: 'red',
-		      borderWidth: 1,
-		      label: {
-			 enabled: true,
-			 position: "top",
-			 content: amount[index]
+		      'red'
 		      }
 		   }
 			    
