@@ -18,14 +18,20 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 1</h1>
+<h1>S&P500 Performance (PHP) updated 2</h1>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
 
 	<script>
 	var numbers = [4, 9, 16, 25];
-	var x = numbers.map(Math.sqrt)
-	document.getElementById("demo").innerHTML = x;
+
+	function myFunction() {
+	  x = document.getElementById("demo")
+	  x.innerHTML = numbers.map(Math.sqrt);
+	}
 	</script>
-	<br>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
