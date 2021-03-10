@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 2</h1>
+<h1>S&P500 Performance (PHP) updated 3</h1>
 
 	<button onclick="myFunction()">Try it</button>
 
@@ -28,169 +28,12 @@
 	var numbers = [4, 9, 16, 25];
 
 	function myFunction() {
-	  x = document.getElementById("demo")
-	  x.innerHTML = numbers.map(Math.sqrt);
+	  x = document.getElementById("anno")
+	  x.innerHTML = numbers.map(annotations);
 	}
 	</script>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/annotations.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-
-<div class="container">
-	<div class="row">
-		<div class="col-sm-6 col-md-6">
-			<div id="container1"></div>
-		</div>
-		<div class="col-sm-6 col-md-6"></div>
-		<div class="col-sm-6 col-md-6"></div>
-		<div class="col-sm-6 col-md-6"></div>
-</div>
-</div>
-	
-	
-<script type="text/javascript">
-// Now create the chart
-Highcharts.chart('container1', {
-
-    chart: {
-        type: 'area',
-        zoomType: 'x',
-        panning: false //,
-        //panKey: 'shift'
-	    //,
-        //scrollablePlotArea: {
-        //    minWidth: 1000
-        //}
-    },
-
-    caption: {
-        text: 'This chart uses the Highcharts Annotations feature to place labels at various points of interest. The labels are responsive and will be hidden to avoid overlap on small screens.'
-    },
-
-    title: {
-        text: '2017 Tour de France Stage 8: Dole - Station des Rousses'
-    },
-
-    accessibility: {
-        description: 'Image description: An annotated line graph illustrates the 8th stage of the 2017 Tour de France cycling race from the start point in Dole to the finish line at Station des Rousses. Altitude is plotted on the Y-axis at increments of 500m and distance is plotted on the X-axis in increments of 25 kilometers. The line graph is interactive, and the user can trace the altitude level at every 100-meter point along the stage. The graph is shaded below the data line to visualize the mountainous altitudes encountered on the 187.5-kilometre stage. The three largest climbs are highlighted at Col de la Joux, Côte de Viry and the final 11.7-kilometer, 6.4% gradient climb to Montée de la Combe de Laisia Les Molunes which peaks at 1200 meters above sea level. The stage passes through the villages of Arbois, Montrond, Bonlieu, Chassal and Saint-Claude along the route.'
-    },
-
-    credits: {
-        enabled: false
-    },
-
-    annotations: [{
-        labelOptions: {
-            backgroundColor: 'rgba(255,255,255,0.5)',
-            verticalAlign: 'top',
-            y: 15
-        },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 100,
-                y: 100
-            },
-            text: 'Mont-sur-Monnet'
-        }, {
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 150,
-                y: 150
-            },
-            x: -10,
-            text: 'Bonlieu'
-        }]
-    }, 
-	{labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 200,
-                y: 200
-            },
-            x: -30,
-            text: 'Col de la Joux'
-        }]
-    }, {
-        labelOptions: {
-            shape: 'connector',
-            align: 'right',
-            justify: false,
-            crop: true,
-            style: {
-                fontSize: '0.8em',
-                textOutline: '1px white'
-            }
-        },
-        labels: []
-    }],
-
-    xAxis: {
-        //labels: {
-            //format: '{value}'
-        //},
-        //minRange: 0,
-       // title: {
-        //    text: 'Distance'
-        //},
-        //accessibility: {
-        //    rangeDescription: 'Range: 0 to 187.8km.'
-      //  }
-    },
-
-    yAxis: {
-        startOnTick: true,
-        endOnTick: false,
-        maxPadding: 0.35,
-        title: {
-            text: null
-        },
-        labels: {
-            format: '${value}'
-        }
-    },
-
-    tooltip: {
-        headerFormat: 'Distance: {point.x:.1f} Buy/Sell<br>',
-        pointFormat: '{point.y} Trade Px',
-        shared: true
-    },
-
-    legend: {
-        enabled: false
-    },
-
-    series: [{
-        accessibility: {
-            keyboardNavigation: {
-                enabled: false
-            }
-        },      
-        data: [[100, 100],[150, 150],[200, 200]],
-        lineColor: Highcharts.getOptions().colors[1],
-        color: Highcharts.getOptions().colors[2],
-        fillOpacity: 0.5,
-        name: 'Elevation',
-        marker: {
-            enabled: true
-        },
-        threshold: null
-    }]
-
-});</script>
 
 	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
@@ -253,6 +96,8 @@ Highcharts.chart('container1', {
 			
 		<h1><?php echo $data2; ?> Share Price</h1>	   
 		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+		
+	<p id="anno"></p>
 	<script>
 		//var marketing = [<?php echo $date; ?>];
 		var marketing = [<?php echo $data3; ?>];
