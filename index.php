@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 12</h1>
+<h1>S&P500 Performance (PHP) updated 13</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -30,7 +30,7 @@
 
 	function myFunction() {
 	  x = document.getElementById("demo")
-	  x.innerHTML = numbers.map(Math.sqrt);
+	  x.innerHTML = numbers.map(return);
 
 	}
 	</script>
