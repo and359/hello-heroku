@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 6</h1>
+<h1>S&P500 Performance (PHP) updated 7</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -30,22 +30,7 @@
 
 	function myFunction() {
 	  x = document.getElementById("demo")
-	  x.innerHTML = marketing.map(function(date, index) {
-			if (marketing[1]=='30/07/2020'){
-		   return {
-		      $("p").text("Green");
-		      }
-		   }
-			    }	else {
-			    
-			    
-		   return {
-		      $("p").text("Red");
-		      }
-		   }
-			    
-			    }
-		});
+	  x.innerHTML = marketing.map(Math.sqrt);
 
 	}
 	</script>
