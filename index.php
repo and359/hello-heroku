@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 24</h1>
+<h1>S&P500 Performance (PHP) updated 25</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -151,7 +151,127 @@
 		      annotation: {
 			 //drawTime: 'afterDatasetsDraw',
 			 drawTime: 'afterDraw',
-			 annotations: annotations
+			 annotations: [{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   }]
 		      }
 		   }
 		});
