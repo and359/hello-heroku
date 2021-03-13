@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 29</h1>
+<h1>S&P500 Performance (PHP) updated 30</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -164,7 +164,7 @@
 				      label: {
 					 enabled: true,
 					 position: "bottom",
-					 content: '30/07/2020 Buy Px: 60.650002'
+					 content: '30/07/2020 Buy Px: 297.49'
 				      }
 				   },{
 				
@@ -179,7 +179,7 @@
 				      label: {
 					 enabled: true,
 					 position: "top",
-					 content: '03/11/2020 Sell Px: 60.650002'
+					 content: '03/11/2020 Sell Px: 423.89'
 				      }
 				   }]
 		      }
