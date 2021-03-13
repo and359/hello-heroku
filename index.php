@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 23</h1>
+<h1>S&P500 Performance (PHP) updated 24</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -107,50 +107,26 @@
 		var txt = "";
 		
 		// populate 'annotations' array dynamically based on 'marketing'
-		//var annotations = marketing.map(function(date, index) {
-		var annotations = marketing.map(function(txt1) {
-			//return {
-			for (var x = 0; x < marketing.length; x++) {
-  				
-				if (marketing[x]=='30/07/2020'){
-					txt = txt + marketing[x] + "green";
-				   //return {
-				      //type: 'line',
-				      //borderColor: 'green',
-				      ////id: 'vline' + index,
-				      //mode: 'vertical',
-				      //scaleID: 'x-axis-0',
-				      //value: date,
+		var annotations = marketing.map(function(date, index) {
+		
+			return {
+				
+				      type: 'line',
+				      borderColor: 'green',
+				      id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
 				      ////borderColor: 'green',
-				      //borderWidth: 1,
-				      //label: {
-					 //enabled: true,
-					 //position: "bottom",
-					 //content: amount[index]
-				      //}
-				   //}
-					    }	else {
-
-					txt = txt + marketing[x] + "red";
-				   //return {
-				      //type: 'line',
-				      //borderColor: 'red',
-				      ////id: 'vline' + index,
-				      //mode: 'vertical',
-				      //scaleID: 'x-axis-0',
-				      //value: date,
-				      ////borderColor: 'red',
-				      //borderWidth: 1,
-				      //label: {
-					 //enabled: true,
-					 //position: "top",
-					 //content: amount[index]
-				      //}
-				   //}
-
-					    }
-			} //for loop
-			//}//return
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   }
+					    
+		
 		});
 
 		var chart = new Chart(ctx, {
