@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 25</h1>
+<h1>S&P500 Performance (PHP) updated 26</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -155,121 +155,16 @@
 				
 				      type: 'line',
 				      borderColor: 'green',
-				      id: 'vline' + index,
+				      id: 'vline0',
 				      mode: 'vertical',
 				      scaleID: 'x-axis-0',
-				      value: date,
+				      value: '06/03/2020',
 				      ////borderColor: 'green',
 				      borderWidth: 1,
 				      label: {
 					 enabled: true,
 					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
+					 content: '06/03/2020 Buy Px: 60.650002'
 				      }
 				   }]
 		      }
