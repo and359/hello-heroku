@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 5</h1>
+<h1>S&P500 Performance (PHP) updated 6</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -126,8 +126,8 @@
 					 //enabled: true,
 					 //position: "bottom",
 					 //content: amount[index]
-				      }
-				   }
+				      //}
+				   //}
 					    }	else {
 
 					txt += marketing[x] + "red";
@@ -144,8 +144,8 @@
 					 //enabled: true,
 					 //position: "top",
 					 //content: amount[index]
-				      }
-				   }
+				      //}
+				   //}
 
 					    }
 			} //for loop
