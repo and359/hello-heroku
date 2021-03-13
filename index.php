@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 26</h1>
+<h1>S&P500 Performance (PHP) updated 27</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -158,13 +158,13 @@
 				      id: 'vline0',
 				      mode: 'vertical',
 				      scaleID: 'x-axis-0',
-				      value: '06/03/2020',
+				      value: '30/07/2020',
 				      ////borderColor: 'green',
 				      borderWidth: 1,
 				      label: {
 					 enabled: true,
 					 position: "bottom",
-					 content: '06/03/2020 Buy Px: 60.650002'
+					 content: '30/07/2020 Buy Px: 60.650002'
 				      }
 				   }]
 		      }
