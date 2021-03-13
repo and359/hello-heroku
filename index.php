@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 2</h1>
+<h1>S&P500 Performance (PHP) updated 3</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -110,11 +110,12 @@
 			if (marketing[1]=='30/07/2020'){
 		   return {
 		      type: 'line',
-		      id: 'vline' + index,
+		      borderColor: 'green',
+		      //id: 'vline' + index,
 		      mode: 'vertical',
 		      scaleID: 'x-axis-0',
 		      value: date,
-		      borderColor: 'green',
+		      //borderColor: 'green',
 		      borderWidth: 1,
 		      label: {
 			 enabled: true,
@@ -127,11 +128,12 @@
 			    
 		   return {
 		      type: 'line',
-		      id: 'vline' + index,
+		      borderColor: 'red',
+		      //id: 'vline' + index,
 		      mode: 'vertical',
 		      scaleID: 'x-axis-0',
 		      value: date,
-		      borderColor: 'red',
+		      //borderColor: 'red',
 		      borderWidth: 1,
 		      label: {
 			 enabled: true,
