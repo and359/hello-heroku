@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 6</h1>
+<h1>S&P500 Performance (PHP) updated 7</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -108,7 +108,7 @@
 		var txt;
 		
 		// populate 'annotations' array dynamically based on 'marketing'
-		var annotations = marketing.map(function(date, index) {
+		var annotations = marketing.map(function(name, index) {
 			for (x in marketing) {
   				
 				if (marketing[x]=='30/07/2020'){
