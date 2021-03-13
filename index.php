@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 14</h1>
+<h1>S&P500 Performance (PHP) updated 15</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -104,7 +104,6 @@
 		var marketing = [<?php echo $data3; ?>];
 		//var amount = [<?php echo $data1; ?>];
 		var amount = [<?php echo $data4; ?>];
-		var x = 0;
 		var txt = "";
 		
 		// populate 'annotations' array dynamically based on 'marketing'
