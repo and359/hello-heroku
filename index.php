@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 3</h1>
+<h1>S&P500 Performance (PHP) updated 4</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -30,7 +30,7 @@
 
 	function myFunction() {
 	  x = document.getElementById("demo")
-	  x.innerHTML = marketing.map(Math.sqrt);
+	  x.innerHTML = numbers.map(Math.sqrt);
 
 	}
 	</script>
@@ -104,45 +104,49 @@
 		var marketing = [<?php echo $data3; ?>];
 		//var amount = [<?php echo $data1; ?>];
 		var amount = [<?php echo $data4; ?>];
+		var x
 		
 		// populate 'annotations' array dynamically based on 'marketing'
 		var annotations = marketing.map(function(date, index) {
-			if (marketing[1]=='30/07/2020'){
-		   return {
-		      type: 'line',
-		      borderColor: 'green',
-		      //id: 'vline' + index,
-		      mode: 'vertical',
-		      scaleID: 'x-axis-0',
-		      value: date,
-		      //borderColor: 'green',
-		      borderWidth: 1,
-		      label: {
-			 enabled: true,
-			 position: "bottom",
-			 content: amount[index]
-		      }
-		   }
-			    }	else {
-			    
-			    
-		   return {
-		      type: 'line',
-		      borderColor: 'red',
-		      //id: 'vline' + index,
-		      mode: 'vertical',
-		      scaleID: 'x-axis-0',
-		      value: date,
-		      //borderColor: 'red',
-		      borderWidth: 1,
-		      label: {
-			 enabled: true,
-			 position: "top",
-			 content: amount[index]
-		      }
-		   }
-			    
-			    }
+			for (x in marketing) {
+  				
+				if (marketing[x]=='30/07/2020'){
+				   return {
+				      type: 'line',
+				      borderColor: 'green',
+				      //id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      //borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "bottom",
+					 content: amount[index]
+				      }
+				   }
+					    }	else {
+
+
+				   return {
+				      type: 'line',
+				      borderColor: 'red',
+				      //id: 'vline' + index,
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: date,
+				      //borderColor: 'red',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "top",
+					 content: amount[index]
+				      }
+				   }
+
+					    }
+			} //for loop
 		});
 
 		var chart = new Chart(ctx, {
