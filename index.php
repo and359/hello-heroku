@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 27</h1>
+<h1>S&P500 Performance (PHP) updated 28</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -165,6 +165,21 @@
 					 enabled: true,
 					 position: "bottom",
 					 content: '30/07/2020 Buy Px: 60.650002'
+				      }
+				   },{
+				
+				      type: 'line',
+				      borderColor: 'red',
+				      id: 'vline1',
+				      mode: 'vertical',
+				      scaleID: 'x-axis-0',
+				      value: '03/11/2020',
+				      ////borderColor: 'green',
+				      borderWidth: 1,
+				      label: {
+					 enabled: true,
+					 position: "top",
+					 content: '03/11/2020 Buy Px: 60.650002'
 				      }
 				   }]
 		      }
