@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 11</h1>
+<h1>S&P500 Performance (PHP) updated 12</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
@@ -30,7 +30,9 @@
 
 	function myFunction() {
 	  x = document.getElementById("demo")
-	  x.innerHTML = numbers.map(Math.sqrt);
+	  //x.innerHTML = numbers.map(Math.sqrt);
+	  x.innerHTML = test + "<br><br>";
+	  x.innerHTML = test1;		
 
 	}
 	</script>
@@ -203,7 +205,7 @@
 		      annotation: {
 			 //drawTime: 'afterDatasetsDraw',
 			 drawTime: 'afterDraw',
-			 annotations: test1
+			 annotations: test
 		      }
 		   }
 		});
