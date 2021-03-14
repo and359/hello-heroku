@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 4</h1>
+<h1>S&P500 Performance (PHP) updated 5</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -163,12 +163,12 @@
 				   }];
 		
 		
-		var test1;
+		var test1 = "";
 		
 		for (var x = 0; x < marketing.length; x++) {
   				
 				if (marketing[x]=='30/07/2020'){
-					test1 = test1 + marketing[x] + "green
+					test1 = test1 + marketing[x] + "green";
 					    }	else {
 
 					test1 = test1 + marketing[x] + "red";
