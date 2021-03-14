@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 3</h1>
+<h1>S&P500 Performance (PHP) updated 4</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -160,10 +160,10 @@
 					 position: "top",
 					 content: '03/11/2020 Sell Px: 423.89'
 				      }
-				   }]
+				   }];
 		
 		
-		var test1 
+		var test1;
 		
 		for (var x = 0; x < marketing.length; x++) {
   				
