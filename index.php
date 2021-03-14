@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 15</h1>
+<h1>S&P500 Performance (PHP) updated 16</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
@@ -104,6 +104,7 @@
 		var marketing = [<?php echo $data3; ?>];
 		//var amount = [<?php echo $data1; ?>];
 		var amount = [<?php echo $data4; ?>];
+		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
 		
 		// populate 'annotations' array dynamically based on 'marketing'
@@ -167,7 +168,7 @@
 		
 		for (var x = 0; x < marketing.length; x++) {
   				
-				if (marketing[x]=='30/07/2020'){
+				if (B_S[x]=='Buy'){
 					//test1 = test1 + marketing[x] + "green";
 					test1 += "{type: 'line', borderColor: 'green', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: " + '"bottom"' + ", content: '" + amount[x] + "'}},"; 
 					//test1 += {type: 'line', borderColor: 'green', id: 'vline' + x, mode: 'vertical', scaleID: 'x-axis-0', value: marketing[x], borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[x] }},; 
