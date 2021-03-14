@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 10</h1>
+<h1>S&P500 Performance (PHP) updated 11</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
@@ -169,11 +169,11 @@
   				
 				if (marketing[x]=='30/07/2020'){
 					//test1 = test1 + marketing[x] + "green";
-					test1 += "{type: 'line', borderColor: 'green', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: ""bottom"", content: '" + amount[x] + "'}},"; 
+					test1 += "{type: 'line', borderColor: 'green', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: " + '"bottom"' + ", content: '" + amount[x] + "'}},"; 
 					    }	else {
 
 					//test1 = test1 + marketing[x] + "red";
-					test1 += "{type: 'line', borderColor: 'red', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: ""top"", content: '" + amount[x] + "'}},"; 
+					test1 += "{type: 'line', borderColor: 'red', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: " + '"top"' + ", content: '" + amount[x] + "'}},"; 
 
 					    }
 			}; 
