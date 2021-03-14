@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 2</h1>
+<h1>S&P500 Performance (PHP) updated 3</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Try it</button>
@@ -174,7 +174,7 @@
 					test1 = test1 + marketing[x] + "red";
 
 					    }
-			} 
+			}; 
 		
 		
 		var chart = new Chart(ctx, {
