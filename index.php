@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 10</h1>
+<h1>S&P500 Performance (PHP) updated 11</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
@@ -235,7 +235,7 @@
 		      annotation: {
 			 //drawTime: 'afterDatasetsDraw',
 			 drawTime: 'afterDraw',
-			 annotations: test2
+			 annotations: test3
 		      }
 		   }
 		});
