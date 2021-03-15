@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 9</h1>
+<h1>S&P500 Performance (PHP) updated 10</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
@@ -183,27 +183,27 @@
 		test1 = test1.substring(0, test1.length - 1);
 		test1 = test1 + "]";
 		
-		var test3 = marketing.map(function(date, index) {
 		
-			if (B_S[index]=='Buy'){
-			return 
-			{
+		var test3 = marketing.map(function(date1, index1) {
+		
+			if (B_S[index1]=='Buy'){
+			return {
 				      type: 'line',
 				      borderColor: 'green',
-				      id: 'vline' + index,
+				      id: 'vline' + index1,
 				      mode: 'vertical',
 				      scaleID: 'x-axis-0',
-				      value: date,
+				      value: date1,
 				      borderWidth: 1,
 				      label: {
 					 enabled: true,
 					 position: "bottom",
-					 content: amount[index]
+					 content: amount[index1]
 				      }
 				   }
 			} else {
-			return
-		//	{type: 'line', borderColor: 'red', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index1]}}
+			return{
+			type: 'line', borderColor: 'red', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index1]}}
 			};
 		
 		});
