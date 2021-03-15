@@ -18,7 +18,7 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 11</h1>
+<h1>S&P500 Performance (PHP) updated 12</h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
@@ -31,7 +31,7 @@
 	function myFunction() {
 	  x = document.getElementById("demo")
 	  //x.innerHTML = numbers.map(Math.sqrt);
-	  x.innerHTML = test + "<br><br>" + test1;
+	  x.innerHTML = "<br><br>" + test3;
 	}
 	</script>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -100,118 +100,22 @@
 		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 		
 	<script>
-		//var marketing = [<?php echo $date; ?>];
 		var marketing = [<?php echo $data3; ?>];
-		//var amount = [<?php echo $data1; ?>];
 		var amount = [<?php echo $data4; ?>];
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
-		
-		// populate 'annotations' array dynamically based on 'marketing'
-		var annotations = marketing.map(function(date, index) {
-		
-			return {
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date,
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index]
-				      }
-				   }
-					    
-		
-		});
-		
-		
-		var test = [{
-				
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline0',
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: '30/07/2020',
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: '30/07/2020 Buy Px: 297.49'
-				      }
-				   },{
-				
-				      type: 'line',
-				      borderColor: 'red',
-				      id: 'vline1',
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: '03/11/2020',
-				      ////borderColor: 'green',
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "top",
-					 content: '03/11/2020 Sell Px: 423.89'
-				      }
-				   }];
-		
-		
-		var test1 = "[";
-		
-		for (var x = 0; x < marketing.length; x++) {
-  				
-				if (B_S[x]=='Buy'){
-					//test1 = test1 + marketing[x] + "green";
-					test1 += "{type: 'line', borderColor: 'green', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: " + '"bottom"' + ", content: '" + amount[x] + "'}},"; 
-					//test1 += {type: 'line', borderColor: 'green', id: 'vline' + x, mode: 'vertical', scaleID: 'x-axis-0', value: marketing[x], borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[x] }},; 
-					    }	else {
-
-					//test1 = test1 + marketing[x] + "red";
-					test1 += "{type: 'line', borderColor: 'red', id: 'vline" + x + "', mode: 'vertical', scaleID: 'x-axis-0', value: '" +  marketing[x] + "', borderWidth: 1, label: {enabled: true, position: " + '"top"' + ", content: '" + amount[x] + "'}},"; 
-					//test1 += {type: 'line', borderColor: 'red', id: 'vline' + x, mode: 'vertical', scaleID: 'x-axis-0', value: marketing[x], borderWidth: 1, label: {enabled: true, position: "top", content: amount[x] }},; 
-					    }
-			}; 
-		
-		test1 = test1.substring(0, test1.length - 1);
-		test1 = test1 + "]";
-		
 		
 		var test3 = marketing.map(function(date1, index1) {
 		
 			if (B_S[index1]=='Buy'){
 			return {
-				      type: 'line',
-				      borderColor: 'green',
-				      id: 'vline' + index1,
-				      mode: 'vertical',
-				      scaleID: 'x-axis-0',
-				      value: date1,
-				      borderWidth: 1,
-				      label: {
-					 enabled: true,
-					 position: "bottom",
-					 content: amount[index1]
-				      }
-				   }
+			type: 'line', borderColor: 'green', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index1]}}
 			} else {
 			return{
 			type: 'line', borderColor: 'red', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index1]}}
 			};
 		
-		});
-		
-		var test2 = [{type: 'line', borderColor: 'green', id: 'vline0', mode: 'vertical', scaleID: 'x-axis-0', value: '06/03/2020', borderWidth: 1, label: {enabled: true, position: "bottom", content: '06/03/2020 Buy Px: 60.650002'}},{type: 'line', borderColor: 'red', id: 'vline1', mode: 'vertical', scaleID: 'x-axis-0', value: '30/07/2020', borderWidth: 1, label: {enabled: true, position: "top", content: '30/07/2020 Sell Px: 58.5'}},{type: 'line', borderColor: 'green', id: 'vline2', mode: 'vertical', scaleID: 'x-axis-0', value: '03/11/2020', borderWidth: 1, label: {enabled: true, position: "bottom", content: '03/11/2020 Buy Px: 57.970001'}},{type: 'line', borderColor: 'red', id: 'vline3', mode: 'vertical', scaleID: 'x-axis-0', value: '30/12/2020', borderWidth: 1, label: {enabled: true, position: "top", content: '30/12/2020 Sell Px: 50.23'}},{type: 'line', borderColor: 'green', id: 'vline4', mode: 'vertical', scaleID: 'x-axis-0', value: '31/12/2020', borderWidth: 1, label: {enabled: true, position: "bottom", content: '31/12/2020 Buy Px: 44.040001'}},{type: 'line', borderColor: 'red', id: 'vline5', mode: 'vertical', scaleID: 'x-axis-0', value: '25/01/2021', borderWidth: 1, label: {enabled: true, position: "top", content: '25/01/2021 Sell Px: 49.009998'}},{type: 'line', borderColor: 'green', id: 'vline6', mode: 'vertical', scaleID: 'x-axis-0', value: '17/02/2021', borderWidth: 1, label: {enabled: true, position: "bottom", content: '17/02/2021 Buy Px: 41.650002'}},{type: 'line', borderColor: 'red', id: 'vline7', mode: 'vertical', scaleID: 'x-axis-0', value: '02/03/2021', borderWidth: 1, label: {enabled: true, position: "top", content: '02/03/2021 Sell Px: 42.119999'}}]
-		
-		
-		
+		});		
 		
 		var chart = new Chart(ctx, {
 		   type: 'line',
