@@ -180,7 +180,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
 	
-	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
+	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc_"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
 	
     }	echo "</table>";
 } else {
