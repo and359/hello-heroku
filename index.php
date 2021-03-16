@@ -18,20 +18,17 @@
 	
 <body>
 
-<h1>S&P500 Performance (PHP) updated 12</h1>
+<h1>S&P500 Daily Performance (Javascript, MySQL, Python, PHP) updated </h1>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<button onclick="myFunction()">Equity</button>
 
 	<p id="demo"></p>
 
-	<script>
-	var numbers = [4, 9, 16, 25];
-
+	<script>	
 	function myFunction() {
 	  x = document.getElementById("demo")
-	  //x.innerHTML = numbers.map(Math.sqrt);
-	  x.innerHTML = "<br><br>" + test3;
+	  x.innerHTML = "<br><br>Welcome to my free website! It shows the backtest result and daily performance of S&P500 and NASDAQ100 components!";
 	}
 	</script>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -200,7 +197,7 @@ $result = $conn->query($sql);
 	
 $conn->close();
 	
-	echo "TGIF";
+	//echo "TGIF";
 	
 ?>
 	<p>
