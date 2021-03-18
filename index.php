@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 39</h1>
+<h1>S&P500 Performance (PHP) 40</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -141,10 +141,10 @@
     	[1572307200000, 229]
 	];
 	
-	function toTimestamp(year,month,day,hour,minute,second){
- var datum = new Date(Date.UTC('2019','10','01','0','0','0'));
+	var testing123 = function toTimestamp('2019','10','01','0','0','0'){
+ var datum = new Date(Date.UTC(year,month,day,hour,minute,second));
  return datum.getTime()/1000;
-}
+};
 
 // Now create the chart
 Highcharts.chart('container1', {
