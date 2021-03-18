@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 14</h1>
+<h1>S&P500 Performance (PHP) 15</h1>
 		
 <script>
 $(document).ready(function(){
@@ -152,7 +152,7 @@ $(document).ready(function(){
 		
 			
 			return [
-			amount[index1],amount[index1]}
+			amount[index1],amount[index1]
 			];
 		
 		});
