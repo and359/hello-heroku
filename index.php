@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 33</h1>
+<h1>S&P500 Performance (PHP) 34</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -134,11 +134,11 @@
 	var elevationData1 = test3;
 	
 	var elevationData = [
-	['01/01/2021', 225],
-    	['02/01/2021', 226],
-    	['03/01/2021', 228],
-    	['04/01/2021', 228],
-    	['05/01/2021', 229]
+	[1569888000000, 225],
+    	[1570492800000, 226],
+    	[1571097600000, 228],
+    	[1571702400000, 228],
+    	[1572307200000, 229]
 	];
 
 // Now create the chart
@@ -293,7 +293,13 @@ Highcharts.chart('container1', {
     }],	*/
 
     xAxis: {
-	    type: "date"/*,
+	    labels: {
+      format: "{value:%b %e}"
+    },
+    tickInterval: 604800000,
+    type: "datetime",
+    min: 1569888000000
+	    /*,
       labels: {
         formatter: function() {
           return Highcharts.dateFormat('%b/%e/%Y', this.value);
