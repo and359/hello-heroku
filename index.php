@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 13</h1>
+<h1>S&P500 Performance (PHP) 14</h1>
 		
 <script>
 $(document).ready(function(){
@@ -152,7 +152,7 @@ $(document).ready(function(){
 		
 			
 			return [
-			type: 'line', borderColor: 'green', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index1]}
+			amount[index1],amount[index1]}
 			];
 		
 		});
