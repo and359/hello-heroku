@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 42</h1>
+<h1>S&P500 Performance (PHP) 43</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -82,11 +82,13 @@
 
 		$data1 = $data1 . '"'. $row['Price'].'",';
 		$date = $date . '"'. $row['PriceDate'] .'",';
+		$data6 = $data6 . '"'. $row['UnixTime'].'",';
 	}
 
 	$data1 = trim($data1,",");
 	//$data2 = trim($data2,",");
 	$date = trim($date,",");
+	$data6 = trim($data6,",");
 	
 	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
     	$result = mysqli_query($mysqli, $sql);
@@ -100,13 +102,13 @@
 		$data3 = $data3 . '"'. $row['TradeDate'].'",';
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
 		$data5 = $data5 . '"'. $row['BuySell'].'",';
-		$data6 = $data6 . '"'. $row['UnixTime'].'",';
+		
 	}
 
 	$data3 = trim($data3,",");
 	$data4 = trim($data4,",");
 	$data5 = trim($data5,",");
-	$data6 = trim($data6,",");
+	
 	
 	?>
 	<!--end of MySQL-->
