@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 50</h1>
+<h1>S&P500 Performance (PHP) 51</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -102,12 +102,14 @@
 		$data3 = $data3 . '"'. $row['TradeDate'].'",';
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
 		$data5 = $data5 . '"'. $row['BuySell'].'",';
+		$data7 = $data7 . '"'. $row['UnixTime'].'",';
 		
 	}
 
 	$data3 = trim($data3,",");
 	$data4 = trim($data4,",");
 	$data5 = trim($data5,",");
+	$data7 = trim($data7,",");
 	
 	
 	?>
@@ -117,7 +119,7 @@
 		<script>
 		var marketing = [<?php echo $data6; ?>];
 		var amount = [<?php echo $data1; ?>];
-		var marketing3 = [<?php echo $data6; ?>];
+		var marketing3 = [<?php echo $data7; ?>];
 		var amount4 = [<?php echo $data4; ?>];
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
