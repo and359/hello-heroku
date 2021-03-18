@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 37</h1>
+<h1>S&P500 Performance (PHP) 38</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -330,8 +330,8 @@ Highcharts.chart('container1', {
     },
 
     tooltip: {
-        headerFormat: 'Distance: {point.x:.1f} km<br>',
-        pointFormat: '{point.y} m a. s. l.',
+        headerFormat: 'Date: {point.x}<br>',
+        pointFormat: '{point.y}',
         shared: true
     },
 
