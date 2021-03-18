@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrator</title>
+	<title>Administrator 1</title>
 	<!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -210,7 +210,8 @@ nav{
 		
 		});		
 		
-		var chart = new Chart(ctx, {
+		var myChart=new Chart(chr, {
+		//var chart = new Chart(ctx, {
 		   type: 'line',
 		   data: {
 			labels: [<?php echo $date; ?>],
