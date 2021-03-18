@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 10</h1>
+<h1>S&P500 Performance (PHP) 11</h1>
 		
 <script>
 $(document).ready(function(){
@@ -148,26 +148,19 @@ $(document).ready(function(){
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
 		
-		var test3 = marketing.map(function(index1) {
+		var test3 = [marketing.map(function(index1) {
 		
 			
 			return [
 			marketing[index1], amount[index1]
 			] ;
 		
-		});	
+		})];	
 		</script>
 	
 	
 <script type="text/javascript">
 // Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
-	var elevationData1 = [
-		marketing.map(function(index2) {
-			return [
-			marketing[index2], amount[index2]
-			];
-	});
-	];
 			
 	var elevationData = [
 	[0.0, 225],
