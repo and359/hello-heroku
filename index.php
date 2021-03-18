@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 52</h1>
+<h1>S&P500 Performance (PHP) 53</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -192,7 +192,8 @@ Highcharts.chart('container1', {
     },
 	
 	
-    annotations: [
+    annotations: test4
+	/*[
 	    {labelOptions: {
             backgroundColor: 'rgba(255,255,255,0.5)',
             verticalAlign: 'top',
@@ -217,7 +218,7 @@ Highcharts.chart('container1', {
             x: -30,
             text: 'Col de la Joux'
         }]}
-		 ],	
+		 ]*/,	
 
     xAxis: {
 	    labels: {
