@@ -20,10 +20,10 @@
 </head>
 <style type="text/css">
 .bg{
-	background-image: linear-gradient(to top left,red,yellow);
+	background-image: linear-gradient(to top left,black,blue);
 }
 nav{
-	background-image: linear-gradient(to top right,black,black); 
+	background-image: linear-gradient(to top right,red,yellow); 
 	padding-left: 300px;
 }
 .content{
@@ -48,7 +48,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
