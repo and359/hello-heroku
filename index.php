@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 27</h1>
+<h1>S&P500 Performance (PHP) 28</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -131,19 +131,19 @@
 	
 	var ele = [<?php echo $date; ?>];
 	
-	var elevationData = test3;
+	var elevationData1 = test3;
 	
-	var elevationData1 = [
-	[1/1/2021, 225],
-    	[2/1/2021, 226],
-    	[3/1/2021, 228],
-    	[4/1/2021, 228],
-    	[5/1/2021, 229],
-    	[6/1/2021, 229],
-    	[7/1/2021, 230],
-    	[8/1/2021, 234],
-    	[9/1/2021, 235],
-    	[10/1/2021, 236],
+	var elevationData = [
+	["1/1/2021", 225],
+    	["2/1/2021", 226],
+    	["3/1/2021", 228],
+    	["4/1/2021", 228],
+    	["5/1/2021", 229],
+    	["6/1/2021", 229],
+    	["7/1/2021", 230],
+    	["8/1/2021", 234],
+    	["9/1/2021", 235],
+    	["10/1/2021", 236],
 	];
 
 // Now create the chart
@@ -298,16 +298,16 @@ Highcharts.chart('container1', {
     }],	*/
 
     xAxis: {
-        labels: {
+        /*labels: {
             format: '{value}'
         },
-        //minRange: 5,
+        minRange: 5,
         title: {
             text: 'Distance'
         },
         accessibility: {
             rangeDescription: 'Range: 0 to 187.8km.'
-        }
+        }*/
     },
 
     yAxis: {
