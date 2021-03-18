@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 41</h1>
+<h1>S&P500 Performance (PHP) 42</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -70,6 +70,8 @@
 	$data3 = '';
 	$data4 = '';
 	$data5 = '';
+	$data6 = '';
+	
 
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
@@ -98,18 +100,20 @@
 		$data3 = $data3 . '"'. $row['TradeDate'].'",';
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
 		$data5 = $data5 . '"'. $row['BuySell'].'",';
+		$data6 = $data6 . '"'. $row['UnixTime'].'",';
 	}
 
 	$data3 = trim($data3,",");
 	$data4 = trim($data4,",");
 	$data5 = trim($data5,",");
+	$data6 = trim($data6,",");
 	
 	?>
 	<!--end of MySQL-->
 	
 	<!--Structure Data Loop-->
 		<script>
-		var marketing = [<?php echo $data3; ?>];
+		var marketing = [<?php echo $data6; ?>];
 		var amount = [<?php echo $data1; ?>];
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
@@ -118,7 +122,7 @@
 		
 			
 			return [
-			moment(marketing[index1], "DD-MM-YYYY"), Number(amount[index1])
+			Number(marketing[index1]), Number(amount[index1])
 			];
 		
 		});
@@ -131,9 +135,9 @@
 	
 	var ele = [<?php echo $date; ?>];
 	
-	var elevationData1 = test3;
+	var elevationData = test3;
 	
-	var elevationData = [
+	var elevationData1 = [
 	[1569888000000, 225],
     	[1570492800000, 226],
     	[1571097600000, 228],
