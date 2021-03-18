@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 25</h1>
+<h1>S&P500 Performance (PHP) 26</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -132,16 +132,16 @@
 	var elevationData = test3;
 	
 	var elevationData1 = [
-	[0.0, 225],
-    	[0.1, 226],
-    	[0.2, 228],
-    	[0.3, 228],
-    	[0.4, 229],
-    	[0.5, 229],
-    	[0.6, 230],
-    	[0.7, 234],
-    	[0.8, 235],
-    	[0.9, 236],
+	[1/1/2021, 225],
+    	[2/1/2021, 226],
+    	[3/1/2021, 228],
+    	[4/1/2021, 228],
+    	[5/1/2021, 229],
+    	[6/1/2021, 229],
+    	[7/1/2021, 230],
+    	[8/1/2021, 234],
+    	[9/1/2021, 235],
+    	[10/1/2021, 236],
 	];
 
 // Now create the chart
