@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 43</h1>
+<h1>S&P500 Performance (PHP) 44</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -304,9 +304,9 @@ Highcharts.chart('container1', {
 	    labels: {
       format: "{value:%b %e}"
     },
-    tickInterval: 604800000,
-    type: "datetime",
-    min: 1569888000000
+    //tickInterval: 604800000,
+    type: "datetime"//,
+    //min: 1569888000000
 	    /*,
       labels: {
         formatter: function() {
