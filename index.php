@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 34</h1>
+<h1>S&P500 Performance (PHP) 35</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -170,7 +170,7 @@ Highcharts.chart('container1', {
         enabled: false
     },
 	
-	/*
+	
     annotations: [{
         labelOptions: {
             backgroundColor: 'rgba(255,255,255,0.5)',
@@ -181,11 +181,11 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 27.98,
-                y: 255
+                x: 1570492800000,
+                y: 226
             },
             text: 'Arbois'
-        }, {
+        }/*, {
             point: {
                 xAxis: 0,
                 yAxis: 0,
@@ -288,9 +288,9 @@ Highcharts.chart('container1', {
                 x: 172.2,
                 y: 925
             },
-            text: '11.7 km climb<br>6.4% on avg.'
+            text: '11.7 km climb<br>6.4% on avg.'*/
         }]
-    }],	*/
+    }],	
 
     xAxis: {
 	    labels: {
