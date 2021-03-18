@@ -82,36 +82,10 @@ $(document).ready(function(){
 
 .button1 {background-color: #008CBA;} /* Blue */
 }
-
-	
-	
-<?php  
-  
-  if(array_key_exists('button1', $_POST)) { 
-            button1(); 
-        } 
-        else if(array_key_exists('button2', $_POST)) { 
-            button2(); 
-        } 
-        function button1() { 
-            echo "This is Button1 that is selected"; 
-        } 
-        function button2() { 
-            echo "This is Button2 that is selected"; 
-        } 
-?>
-
-  <form method="post"> 
-        <input type="submit" name="button1"
-                class="button" value="Button1" /> 
-          
-        <input type="submit" name="button2"
-                class="button" value="Button2" /> 
-    </form>
   
   </style>
   
-  <button class="button button1">Run Backtest</button>
+
 
 <div class="container">
 	<div class="row">
@@ -124,6 +98,77 @@ $(document).ready(function(){
 </div>
 </div>
 
+	
+	<!--mysql-->
+	<?php
+	/* Database connection settings */
+	$host = 'us-cdbr-east-03.cleardb.com';
+	$user = 'b8a00bf633cf68';
+	$pass = '1a8113a0';
+	$db = 'heroku_69459908ed082cc';
+	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+
+	$data1 = '';
+	$data2 = '';
+	$date = '';
+	$data3 = '';
+	$data4 = '';
+	$data5 = '';
+
+	//query to get data from the table
+	$sql = "SELECT * FROM `backtest`;";
+    	$result = mysqli_query($mysqli, $sql);
+
+	//loop through the returned data
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data1 = $data1 . '"'. $row['Price'].'",';
+		$date = $date . '"'. $row['PriceDate'] .'",';
+	}
+
+	$data1 = trim($data1,",");
+	//$data2 = trim($data2,",");
+	$date = trim($date,",");
+	
+	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
+    	$result = mysqli_query($mysqli, $sql);
+	$row = mysqli_fetch_array($result);
+	$data2 = $data2 . $row['Ticker'];
+	
+	$sql = "select * from `heroku_69459908ed082cc`.`buy_sell`;";
+    	$result = mysqli_query($mysqli, $sql);
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data3 = $data3 . '"'. $row['TradeDate'].'",';
+		$data4 = $data4 . '"'. $row['Remarks'].'",';
+		$data5 = $data5 . '"'. $row['BuySell'].'",';
+	}
+
+	$data3 = trim($data3,",");
+	$data4 = trim($data4,",");
+	$data5 = trim($data5,",");
+	
+	?>
+	<!--end of MySQL-->
+	
+	<!--Structure Data Loop-->
+		<script>
+		var marketing = [<?php echo $data3; ?>];
+		var amount = [<?php echo $data4; ?>];
+		var B_S = [<?php echo $data5; ?>];
+		var txt = "";
+		
+		var test3 = marketing.map(function(date1, index1) {
+		
+			
+			return [
+			marketing[date1], amount[index1]
+			] ;
+		
+		});	
+		</script>
+	
+	
 <script type="text/javascript">
 // Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
 var elevationData = [
