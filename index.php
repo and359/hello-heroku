@@ -183,10 +183,10 @@ nav{
 	?>
 	<!--end of mysql-->
 	
-	<div class="container">	
+	<!--<div class="container">-->	
 			
-		<h1><?php echo $data2; ?> Share Price</h1>	   
-		<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+		<!--<h1><?php echo $data2; ?> Share Price</h1>-->	   
+		<!--<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 	
 	<script type="text/javascript">
 		var chr=document.getElementById("myChart").getContext("2d");
@@ -259,7 +259,7 @@ nav{
 			}
 		});
 	</script>
-	</div>
+	<!--</div>-->
 
 
 
