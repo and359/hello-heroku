@@ -6,7 +6,6 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 		<title>S&P500</title>
 
-		<!-- 
 			<style type="text/css">			
 			body{
 				font-family: Arial;
@@ -24,21 +23,12 @@
 				padding: 10px;
 			}
 		</style>
--->
 
 	</head>
 
-	
-
-	<!--username-->	
-	
-	<!--end of username-->	
-	
-	
-	
 <body>
-
-		<!--username-->	
+<h1>S&P500 Performance (PHP) 1</h1>
+		
 <script>
 $(document).ready(function(){
 	var user_name = $('span.element_username').text();
@@ -53,7 +43,7 @@ $(document).ready(function(){
 	<!--end of username-->	
 
 	
-<h1>S&P500 Performance (PHP)</h1>
+
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script
@@ -154,7 +144,7 @@ $(document).ready(function(){
 	<!--Structure Data Loop-->
 		<script>
 		var marketing = [<?php echo $data3; ?>];
-		var amount = [<?php echo $data4; ?>];
+		var amount = [<?php echo $data1; ?>];
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
 		
@@ -162,7 +152,7 @@ $(document).ready(function(){
 		
 			
 			return [
-			marketing[date1], amount[index1]
+			marketing[index1], amount[index1]
 			] ;
 		
 		});	
