@@ -298,6 +298,12 @@ Highcharts.chart('container1', {
     }],	*/
 
     xAxis: {
+	    type: "datetime",
+      labels: {
+        formatter: function() {
+          return Highcharts.dateFormat('%b/%e/%Y', this.value);
+        }
+      }
         /*labels: {
             format: '{value}'
         },
