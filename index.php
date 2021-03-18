@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 55</h1>
+<h1>S&P500 Performance (PHP) 56</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -139,14 +139,14 @@
 		//annotations	
 		var test4 = marketing3.map(function(date2, px2, index2) {
 		
-			if (B_S[index2]=='Buy'){
+			if (B_S[px2]=='Buy'){
 			return {
 			//type: 'line', borderColor: 'green', id: 'vline' + index2, mode: 'vertical', scaleID: 'x-axis-0', value: date2, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount4[index2]}}
-			labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},x: -30,text: amount4[index2]}]}
+			labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},x: -30,text: amount4[px2]}]}
 			} else {
 			return{
 			//type: 'line', borderColor: 'red', id: 'vline' + index2, mode: 'vertical', scaleID: 'x-axis-0', value: date2, borderWidth: 1, label: {enabled: true, position: "top", content: amount4[index2]}}
-			labelOptions: {backgroundColor: 'rgba(255,255,255,0.5)',verticalAlign: 'top',y: 15},labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},text: amount4[index2]}]}
+			labelOptions: {backgroundColor: 'rgba(255,255,255,0.5)',verticalAlign: 'top',y: 15},labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},text: amount4[px2]}]}
 			};
 		
 		});		
