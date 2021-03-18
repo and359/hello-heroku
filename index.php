@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 29</h1>
+<h1>S&P500 Performance (PHP) 30</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -357,5 +357,85 @@ Highcharts.chart('container1', {
 
 });</script>
 
+	
+<script>
+var linechart;    
+  
+ document.addEventListener('DOMContentLoaded', function() {  
+  
+  linechart = new Highcharts.Chart({
+    chart: {
+      renderTo: 'chart-container',  
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'spline'
+    },
+    data: {
+      csvURL: window.location.origin + '/linedata.csv'
+    }, 
+    title: {
+        text: 'Total Counts',
+        style: {
+          color: '#000',
+          fontSize: '14px',
+          fontWeight: 'bold'  
+        }
+    },
+    credits: {
+      enabled: false
+    },
+
+    xAxis: {
+      title: {
+        text: 'Weeks'        
+      }
+    },     
+    yAxis: {
+      title: {
+        text: 'Total Counts'
+      },
+      labels: {
+        format: '{value:,.0f}'
+      }     
+    },
+    legend: {
+      enabled: true,
+      itemStyle: {
+        fontSize: '11px',
+        fontWeight: 'normal'
+        }
+    },    
+    plotOptions: {
+      spline: { 
+        dataLabels: {
+          enabled: true,
+          style: {
+            fontSize: '10px',
+            fontWeight: 'normal'
+          },
+          format: '{point.y:.0f}'
+        },
+        marker: {
+          enabled: false
+        },
+        enableMouseTracking: true
+      }
+    },
+    tooltip:
+    {
+      headerFormat: '{series.name}<br />',
+      pointFormat: 'Total Count for {point.name}: {point.y:.0f}',
+      crosshairs: [true]
+    },      
+    series: [{
+      color: '#5b9bd5',
+      label: {
+        enabled: false
+      }
+    }]  
+  }); 
+}); 
+</script>
 </body>
 </html>
