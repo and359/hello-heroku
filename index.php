@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 1</h1>
+<h1>S&P500 Performance (PHP) 2</h1>
 		
 <script>
 $(document).ready(function(){
