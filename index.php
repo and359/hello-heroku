@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 2</h1>
+<h1>S&P500 Performance (PHP) 3</h1>
 		
 <script>
 $(document).ready(function(){
@@ -161,7 +161,19 @@ $(document).ready(function(){
 	
 <script type="text/javascript">
 // Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
-var elevationData = [test3];
+//var elevationData = [test3];
+	var elevationData = [
+	[0.0, 225],
+    	[0.1, 226],
+    	[0.2, 228],
+    	[0.3, 228],
+    	[0.4, 229],
+    	[0.5, 229],
+    	[0.6, 230],
+    	[0.7, 234],
+    	[0.8, 235],
+    	[0.9, 236],
+	];
 
 // Now create the chart
 Highcharts.chart('container1', {
