@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 44</h1>
+<h1>S&P500 Performance (PHP) 45</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -189,8 +189,8 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 1570492800000,
-                y: 226
+                x: 1583798400000,
+                y: 57.970001
             },
             text: 'Arbois'
         /*}, {
@@ -240,8 +240,8 @@ Highcharts.chart('container1', {
             point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: 1571702400000,
-                y: 228
+                x: 1613692800000,
+                y: 227.270004
             },
             x: -30,
             text: 'Col de la Joux'
@@ -338,9 +338,14 @@ Highcharts.chart('container1', {
     },
 
     tooltip: {
-        headerFormat: 'Date: {point.x}<br>',
-        pointFormat: '{point.y}',
-        shared: true
+        formatter: function() {
+                return  '<b>' + this.series.name +'</b><br/>' +
+                    Highcharts.dateFormat('%e - %b - %Y',
+                                          new Date(this.x))
+                + ' date, ' + this.y ;
+            },//headerFormat: 'Date: {point.x}<br>',
+        //pointFormat: '{point.y}',
+        //shared: true
     },
 
     legend: {
