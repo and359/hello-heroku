@@ -27,22 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 17</h1>
-		
-<script>
-$(document).ready(function(){
-	var user_name = $('span.element_username').text();
-	var user_id = Number($("#enjin-bar").data("user_id"));
-	if (user_id > 0){
-		document.getElementById("displayUser").innerHTML='Welcome ' + user_name + '';
-	} else {
-		document.getElementById("displayUser").innerHTML='Welcome Guest';}
-	});
-</script>
-	<span id="displayUser"></span>
-	<!--end of username-->	
-
-	
+<h1>S&P500 Performance (PHP) 18</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -56,26 +41,6 @@ $(document).ready(function(){
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1 {background-color: #008CBA;} /* Blue */
-}
-  
-  </style>
-  
-
 
 <div class="container">
 	<div class="row">
@@ -329,7 +294,7 @@ Highcharts.chart('container1', {
 
     xAxis: {
         labels: {
-            format: '{value} km'
+            format: '{value}'
         },
         minRange: 5,
         title: {
@@ -348,7 +313,7 @@ Highcharts.chart('container1', {
             text: null
         },
         labels: {
-            format: '{value} m'
+            format: '{value}'
         }
     },
 
