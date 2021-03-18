@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 32</h1>
+<h1>S&P500 Performance (PHP) 33</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -293,7 +293,7 @@ Highcharts.chart('container1', {
     }],	*/
 
     xAxis: {
-	    type: "datetime"/*,
+	    type: "date"/*,
       labels: {
         formatter: function() {
           return Highcharts.dateFormat('%b/%e/%Y', this.value);
