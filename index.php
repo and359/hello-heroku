@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 51</h1>
+<h1>S&P500 Performance (PHP) 52</h1>
 
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -103,6 +103,7 @@
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
 		$data5 = $data5 . '"'. $row['BuySell'].'",';
 		$data7 = $data7 . '"'. $row['UnixTime'].'",';
+		$data8 = $data8 . '"'. $row['Price'].'",';
 		
 	}
 
@@ -110,6 +111,7 @@
 	$data4 = trim($data4,",");
 	$data5 = trim($data5,",");
 	$data7 = trim($data7,",");
+	$data8 = trim($data8,",");
 	
 	
 	?>
@@ -121,6 +123,7 @@
 		var amount = [<?php echo $data1; ?>];
 		var marketing3 = [<?php echo $data7; ?>];
 		var amount4 = [<?php echo $data4; ?>];
+		var px4 = [<?php echo $data8; ?>];
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
 		
@@ -139,11 +142,11 @@
 			if (B_S[index2]=='Buy'){
 			return {
 			//type: 'line', borderColor: 'green', id: 'vline' + index2, mode: 'vertical', scaleID: 'x-axis-0', value: date2, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount4[index2]}}
-			labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: amount[px2]},x: -30,text: amount4[index2]}]}
+			labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},x: -30,text: amount4[index2]}]}
 			} else {
 			return{
 			//type: 'line', borderColor: 'red', id: 'vline' + index2, mode: 'vertical', scaleID: 'x-axis-0', value: date2, borderWidth: 1, label: {enabled: true, position: "top", content: amount4[index2]}}
-			labelOptions: {backgroundColor: 'rgba(255,255,255,0.5)',verticalAlign: 'top',y: 15},labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: amount[px2]},text: amount4[index2]}]}
+			labelOptions: {backgroundColor: 'rgba(255,255,255,0.5)',verticalAlign: 'top',y: 15},labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},text: amount4[index2]}]}
 			};
 		
 		});		
