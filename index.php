@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 5</h1>
+<h1>S&P500 Performance (PHP) 6</h1>
 		
 <script>
 $(document).ready(function(){
@@ -165,7 +165,7 @@ $(document).ready(function(){
 		marketing.map(function(index1) {
 			return [
 			marketing[index1], amount[index1]
-			]
+			]}
 	];
 			
 	var elevationData = [
