@@ -27,7 +27,7 @@
 	</head>
 
 <body>
-<h1>S&P500 Performance (PHP) 11</h1>
+<h1>S&P500 Performance (PHP) 12</h1>
 		
 <script>
 $(document).ready(function(){
@@ -148,14 +148,14 @@ $(document).ready(function(){
 		var B_S = [<?php echo $data5; ?>];
 		var txt = "";
 		
-		var test3 = [marketing.map(function(index1) {
+		var test3 = marketing.map(function(date1, index1) {
 		
 			
-			return [
-			marketing[index1], amount[index1]
-			] ;
+			return {
+			type: 'line', borderColor: 'green', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index1]}
+			};
 		
-		})];	
+		});
 		</script>
 	
 	
