@@ -65,7 +65,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results+ </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -549,7 +549,7 @@ $conn->close();
 </p>
 
 <!--<div class="content bg"><div class="container"><div class="row"><div class="col s12"><div class="col l12 m6 s12"><div class="card card-bg"><div class="card-content"><table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr></div></div></div></div></div></div></div>-->
-<div class="content bg"><div class="container"><div class="row"><div class="col s36"><div class="col l12 m36 s36"><div class="card card-bg"><div class="card-content"><table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr></div></div></div></div></div></div></div>
+<div class="content bg"><div class="container"><div class="row"><div class="col s36"><div class="col l36 m36 s36"><div class="card card-bg"><div class="card-content"><table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr></div></div></div></div></div></div></div>
 
 	 		
 </body>
