@@ -234,6 +234,7 @@ nav{
 		var amount4 = [<?php echo $data4; ?>];
 		var px4 = [<?php echo $data8; ?>];
 		var B_S = [<?php echo $data5; ?>];
+		var marketing4 = [<?php echo $data3; ?>];
 		var txt = "";
 		
 		var test3 = marketing.map(function(date1, index1) {
@@ -260,7 +261,7 @@ nav{
 		
 		});	
 		
-		var test5 = marketing.map(function(date3, index3) {
+		var test5 = marketing4.map(function(date3, index3) {
 		
 			if (B_S[index3]=='Buy'){
 			return {
