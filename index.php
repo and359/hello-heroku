@@ -30,16 +30,16 @@
 }
 nav{
 	background-image: linear-gradient(to top right,red,yellow); 
-	padding-left: 100px;
+	padding-left: 300px;
 }
 .content{
-	padding-left: 100px;
+	padding-left: 300px;
 	height:100%;
 }
 .card-bg{
 	background: rgba(0,0,0,0);
 }
-@media only screen and (max-width: 1492px){
+@media only screen and (max-width: 592px){
 	.content,nav{
 		padding-left: 0;
 	}
