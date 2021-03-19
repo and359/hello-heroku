@@ -529,7 +529,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-	echo "<div class='content bg'><div class='container'><div class='row'><div class='col s12'><div class='col l12 m6 s12'><div class='card card-bg'><div class='card-content'><table border=1 bgcolor='black'><font color='orange'><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr>";
+	echo "<div class='content bg'><div class='container'><div class='row'><div class='col s12'><div class='col l12 m6 s12'><div class='card card-bg'><div class='card-content'><table border=1 bgcolor='black'><font color='red'><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr>";
 	
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
