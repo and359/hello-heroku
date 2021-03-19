@@ -65,7 +65,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -212,17 +212,38 @@ nav{
 	
 	<div class="container">
 	<div class="row">
-		<div class="col-sm-6 col-md-6">
-			<div id="container1"></div>
+		<!--<div class="col-sm-6 col-md-6">-->
+		<div class="col s12">
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
+						<div id="container1"></div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-sm-6 col-md-6"></div>
-		<div class="col-sm-6 col-md-6"></div>
-		<div class="col-sm-6 col-md-6"></div>
+		<!--<div class="col-sm-6 col-md-6"></div>-->
+		<!--<div class="col-sm-6 col-md-6"></div>-->
+		<!--<div class="col-sm-6 col-md-6"></div>-->
 	</div>
 	</div>
-
+	<!--<div class="content bg">
+		<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h1 class="white-text">DashBoard</h1>
+			</div>
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
+						<canvas id="myChart"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>-->
 	
-	<!--<div class="container">-->	
 			
 		<!--<h1><?php echo $data2; ?> Share Price</h1>-->	   
 		<!--<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
