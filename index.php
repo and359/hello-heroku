@@ -11,9 +11,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <!--Highchart-->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-      <!--End Of Highchart-->
 	
       <!--chart.js annotation plugin-->
       <script>
@@ -48,22 +45,6 @@ nav{
 	});
 </script>
 <body>
-	
-	<!--Highchart-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/annotations.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-	<!--End Of Highchart-->
-	
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
@@ -165,8 +146,6 @@ nav{
 	$data3 = '';
 	$data4 = '';
 	$data5 = '';
-	$data6 = '';
-	
 
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
@@ -177,13 +156,11 @@ nav{
 
 		$data1 = $data1 . '"'. $row['Price'].'",';
 		$date = $date . '"'. $row['PriceDate'] .'",';
-		$data6 = $data6 . '"'. $row['UnixTime'].'",';
 	}
 
 	$data1 = trim($data1,",");
 	//$data2 = trim($data2,",");
 	$date = trim($date,",");
-	$data6 = trim($data6,",");
 	
 	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
     	$result = mysqli_query($mysqli, $sql);
@@ -197,17 +174,11 @@ nav{
 		$data3 = $data3 . '"'. $row['TradeDate'].'",';
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
 		$data5 = $data5 . '"'. $row['BuySell'].'",';
-		$data7 = $data7 . '"'. $row['UnixTime'].'",';
-		$data8 = $data8 . '"'. $row['Price'].'",';
-		
 	}
 
 	$data3 = trim($data3,",");
 	$data4 = trim($data4,",");
 	$data5 = trim($data5,",");
-	$data7 = trim($data7,",");
-	$data8 = trim($data8,",");
-	
 	
 	?>
 	<!--end of mysql-->
@@ -222,6 +193,50 @@ nav{
 		var chr2=document.getElementById("myChart2").getContext("2d");
 		
 //chart 1		
+		var marketing = [<?php echo $data3; ?>];
+		var amount = [<?php echo $data4; ?>];
+		var B_S = [<?php echo $data5; ?>];
+		var txt = "";
+		
+		var test3 = marketing.map(function(date1, index1) {
+		
+			if (B_S[index1]=='Buy'){
+			return {
+			type: 'line', borderColor: 'green', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index1]}}
+			} else {
+			return{
+			type: 'line', borderColor: 'red', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index1]}}
+			};
+		
+		});		
+		
+		var myChart=new Chart(chr, {
+		//var chart = new Chart(ctx, {
+		   type: 'line',
+		   data: {
+			labels: [<?php echo $date; ?>],
+		      datasets: [{
+			 label: 'Close Price',
+			 data: [<?php echo $data1; ?>],
+			 backgroundColor: 'rgba(0, 119, 290, 0.2)',
+			 borderColor: 'rgba(0, 119, 290, 0.6)'
+		      }]
+		   },
+		   options: {
+		      scales: {
+			 yAxes: [{
+			    ticks: {
+			       beginAtZero: true
+			    }
+			 }]
+		      },
+		      annotation: {
+			 //drawTime: 'afterDatasetsDraw',
+			 drawTime: 'afterDraw',
+			 annotations: test3
+		      }
+		   }
+		});
 		
 //end of chart 1		
 		var myChart2=new Chart(chr2,{
