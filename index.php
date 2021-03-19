@@ -19,7 +19,7 @@
       </script>
 	
 </head>
-<style type="text/css">
+<!--<style type="text/css">
 .bg{
 	background-image: linear-gradient(to top left,black,blue);
 }
@@ -39,12 +39,12 @@ nav{
 		padding-left: 0;
 	}
 }
-</style>
-<script type="text/javascript">
+</style>-->
+<!--<script type="text/javascript">
 	$(document).ready(function(){
 		$('.sidenav').sidenav();
 	});
-</script>
+</script>-->
 <body>
 	<script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -61,7 +61,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
