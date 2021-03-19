@@ -2,7 +2,7 @@
 <html>
     <head>
         
-        <title>Collapse test 4</title>
+        <title>Collapse test 5</title>
         
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         
