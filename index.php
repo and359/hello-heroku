@@ -72,7 +72,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results:</a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -529,12 +529,12 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-	echo "<div class='content bg'><div class='container'><div class='row'><div class='col s12'><div class='col l12 m6 s12'><div class='card card-bg'><div class='card-content'><table border=1 bgcolor='#000066'><font color='#ff9900'><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr>";
+	echo "<div class='content bg'><div class='container'><div class='row'><div class='col s12'><div class='col l12 m6 s12'><div class='card card-bg'><div class='card-content'><table border=1 bgcolor='#000066'><tr><th><font color='#ff9900'>#</font></th><th><font color='#ff9900'>Ticker</font></th><th><font color='#ff9900'>Desc</font></th><th><font color='#ff9900'>Close Price</font></th><th><font color='#ff9900'>Returns</font></th><th><font color='#ff9900'>Sector</font></th><th><font color='#ff9900'>Industry</font></th><th><font color='#ff9900'>Volume</font></th><th><font color='#ff9900'>Index</font></th></tr>";
 	
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
 	
-	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc_"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
+	echo "<tr><td><font color='#ff9900'>" . ++$row_num . ")</font></td><td><font color='#ff9900'>" . $row["Ticker"]. "</font></td><td><font color='#ff9900'>" . $row["Desc_"]. "</font></td><td><font color='#ff9900'>" . $row["LastPx"]. "</font></td><td><font color='#ff9900'>" . $row["RtnPercent"]. "</font></td><td><font color='#ff9900'>" . $row["Sector"]. "</font></td><td><font color='#ff9900'>" . $row["Industry"]. "</font></td><td><font color='#ff9900'>" . $row["Volume"]. "</font></td><td><font color='#ff9900'>" . $row["Index_"]. "</font></td></tr>";
 	
     }	echo "</font></table></div></div></div></div></div></div></div>";
 } else {
