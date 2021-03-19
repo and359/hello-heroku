@@ -30,16 +30,16 @@
 }
 nav{
 	background-image: linear-gradient(to top right,red,yellow); 
-	padding-left: 100px;
+	padding-left: 200px;
 }
 .content{
-	padding-left: 100px;
+	padding-left: 200px;
 	height:100%;
 }
 .card-bg{
 	background: rgba(0,0,0,0);
 }
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 1992px){
 	.content,nav{
 		padding-left: 0;
 	}
@@ -70,7 +70,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results:</a>
+			<a href="#" class="brand-logo center">Trading Results:1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
