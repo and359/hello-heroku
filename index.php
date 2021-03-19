@@ -5,13 +5,11 @@
 	
 	
 	
-	<!--<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css"></script>-->
-	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
-	<!--<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>-->
+	
       
 </head>
 <body>
-	5<br>
+	6<br>
 	
 	
 	
@@ -26,6 +24,9 @@
         <tr id="collapseme" class="collapse out"><td><div>Should be collapsed</div></td></tr>
     </table>
 	
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 	 		
 </body>
 </html>
