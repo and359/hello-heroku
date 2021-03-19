@@ -65,7 +65,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -74,11 +74,12 @@ nav{
 		<li>
 			<div class="user-view">
 				<div class="background">
-					<img src="cd.png" width="100%">
+					<img src="Untitled-1.jpg" width="100%">
 				</div>
 				<a href="#"><img src="pp.jpg" class="circle"></a>
-				<a href="#" class="white-text name">Maya Circle</a>
-				<a href="#" class="white-text email">MayaCircle@email.com</a>
+				<a href="#" class="white-text name">Andy Li</a>
+				<a href="#" class="white-text email">and.app28@gmail.com</a>/<br>
+				<a href="#" class="white-text email">sli015@e.ntu.edu.sg</a>
 			</div>	
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
