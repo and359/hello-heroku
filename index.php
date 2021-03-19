@@ -61,7 +61,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -224,7 +224,7 @@ nav{
 		<!--<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
 	
 	<script type="text/javascript">
-		var chr=document.getElementById("myChart").getContext("2d");
+		//var chr=document.getElementById("myChart").getContext("2d");
 		var chr2=document.getElementById("myChart2").getContext("2d");
 		
 //chart 1		
