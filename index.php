@@ -3,41 +3,21 @@
 <head>
 	
 	
-	<!--<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
-	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>-->
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 	
 	
       
 </head>
 <body>
-	<script async src="//jsfiddle.net/KnuU6/21/embed/"></script>
-	
-	<div class="navbar-fixed">
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>	
-		</div>
-	</nav>
-	</div>
-
-	<script>
-		$(".btn").click(function() {
-		    if($("#collapseme").hasClass("out")) {
-			$("#collapseme").addClass("in");
-			$("#collapseme").removeClass("out");
-		    } else {
-			$("#collapseme").addClass("out");
-			$("#collapseme").removeClass("in");
-		    }
-		});
-	</script>
+	1<br>
 	
 	
 	<table class="table table-bordered table-striped">
         <tr>
             <td>
-              <button type="button" class="btn">
+              <button type="button" class="btn" data-toggle="collapse" data-target="#collapseme">
                 Click to expand
               </button>
             </td>
