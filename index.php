@@ -67,7 +67,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 2</a>
+			<a href="#" class="brand-logo center">Administrator 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -222,7 +222,7 @@ nav{
 		var chr2=document.getElementById("myChart2").getContext("2d");
 		
 //chart 1		
-		var marketing = [<?php echo $data6; ?>];
+		/*var marketing = [<?php echo $data6; ?>];
 		var amount = [<?php echo $data1; ?>];
 		var marketing3 = [<?php echo $data7; ?>];
 		var amount4 = [<?php echo $data4; ?>];
@@ -414,7 +414,7 @@ nav{
 		      }
 		   }
 		});
-		
+		*/
 //end of chart 1		
 		var myChart2=new Chart(chr2,{
 			type:'line',
