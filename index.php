@@ -72,7 +72,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -529,14 +529,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-	echo "<div class='content bg'><div class='container'><div class='row'><div class='col s12'><div class='col l12 m6 s12'><div class='card card-bg'><div class='card-content'><table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr>";
+	echo "<div class='content bg'><div class='container'><div class='row'><div class='col s12'><div class='col l12 m6 s12'><div class='card card-bg'><div class='card-content'><table border=1 bgcolor='#5D7B9D'><font color='#fff'><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr>";
 	
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
 	
 	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc_"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
 	
-    }	echo "</table></div></div></div></div></div></div></div>";
+    }	echo "</font></table></div></div></div></div></div></div></div>";
 } else {
     echo "0 results";
 }
@@ -554,9 +554,6 @@ $conn->close();
 	<p>
 <script> document.write(new Date().toLocaleDateString()); </script>
 </p>
-
-<!--<div class="content bg"><div class="container"><div class="row"><div class="col s12"><div class="col l12 m6 s12"><div class="card card-bg"><div class="card-content"><table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr></div></div></div></div></div></div></div>-->
-<div class='content bg'><div class="container"><div class="row"><div class="col s12"><div class="col l12 m6 s12"><div class="card card-bg"><div class="card-content"><table><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr></div></div></div></div></div></div></div>
 
 	 		
 </body>
