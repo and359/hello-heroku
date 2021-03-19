@@ -27,7 +27,7 @@
    <table class="table table-sm table-hover" id="carsTable">
 <thead class="thead-inverse">
 
-<thead>
+
     <tr>
         <th colspan="6"></th>
         <th colspan="3">Current Month</th>
