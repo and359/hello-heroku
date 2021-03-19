@@ -65,7 +65,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 2</a>
+			<a href="#" class="brand-logo center">Trading Result</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -74,7 +74,7 @@ nav{
 		<li>
 			<div class="user-view">
 				<div class="background">
-					<img src="network_map.png" width="100%">
+					<img src="Backgrd.jpg" width="100%">
 				</div>
 				<a href="#"><img src="Untitled-1.jpg" class="circle"></a>
 				<a href="#" class="white-text name">Andy Li</a>
@@ -83,7 +83,7 @@ nav{
 			</div>	
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
-		<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>
+		<!--<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>-->
 	</ul>
 	<div class="content bg">
 		<div class="container">
@@ -94,40 +94,42 @@ nav{
 			<div class="col s12 m6 l3">
 				<div class="card card-bg white-text">
 					<div class="card-content center">
-						<p>Revenue</p>
+						<p>Total Equity</p>
 						<h5>$12,476.00</h5>
 						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
-						<b class="green-text">%12</b>
+						<b class="green-text">24.76%</b>
 					</div>
 				</div>
 			</div>
 			<div class="col s12 m6 l3">
 				<div class="card card-bg white-text">
 					<div class="card-content center">
-						<p>Click</p>
-						<h5>2400</h5>
-						<i class="material-icons small red-text">keyboard_arrow_down</i><br>
-						<b class="red-text">%10</b>
+						<p>Net Gain/Loss</p>
+						<h5>2,476.00</h5>
+						<!--<i class="material-icons small red-text">keyboard_arrow_down</i><br>-->
+						<!--<b class="red-text">%10</b>-->
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">100%</b>
 					</div>
 				</div>
 			</div>
 			<div class="col s12 l3 m6">
 				<div class="card card-bg white-text">
 					<div class="card-content center">
-						<p>Users</p>
-						<h5>5000,00</h5>
+						<p>Total Trades</p>
+						<h5>12</h5>
 						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
-						<b class="green-text">%7</b>
+						<b class="green-text">100%</b>
 					</div>
 				</div>
 			</div>
 			<div class="col s12 l3 m6">
 				<div class="card card-bg white-text">
 					<div class="card-content center">
-						<p>Conversion Rate</p>
-						<h5>0,80%</h5>
+						<p>ROI</p>
+						<h5>24.76%</h5>
 						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
-						<b class="green-text">%25</b>
+						<b class="green-text">100%</b>
 					</div>
 				</div>
 			</div>
