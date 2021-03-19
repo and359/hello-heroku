@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>Collapse test 3</title>
-        <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+        
+        <title>Collapse test 4</title>
+        
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <!--<script src="js/bootstrap-collapse.js"></script>-->
+        
     </head>
 	
 	<style>
