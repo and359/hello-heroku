@@ -61,7 +61,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -258,6 +258,18 @@ nav{
 			labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},x: -30,text: amount4[px2]}]}
 			};
 		
+		});	
+		
+		var test5 = marketing.map(function(date3, index3) {
+		
+			if (B_S[index3]=='Buy'){
+			return {
+			type: 'line', borderColor: 'green', id: 'vline' + index3, mode: 'vertical', scaleID: 'x-axis-0', value: date3, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index3]}}
+			} else {
+			return{
+			type: 'line', borderColor: 'red', id: 'vline' + index3, mode: 'vertical', scaleID: 'x-axis-0', value: date3, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index3]}}
+			};
+		
 		});		
 		</script>
 	
@@ -293,7 +305,7 @@ var myChart=new Chart(chr, {
 		      annotation: {
 			 //drawTime: 'afterDatasetsDraw',
 			 drawTime: 'afterDraw',
-			 annotations: test3
+			 annotations: test5
 		      }
 		   }
 		});
