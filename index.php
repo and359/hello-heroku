@@ -65,7 +65,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 2</a>
+			<a href="#" class="brand-logo center">Administrator 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -210,6 +210,7 @@ nav{
 	?>
 	<!--end of mysql-->
 	
+	<div class="content bg">
 	<div class="container">
 	<div class="row">
 		<!--<div class="col-sm-6 col-md-6">-->
@@ -225,6 +226,7 @@ nav{
 		<!--<div class="col-sm-6 col-md-6"></div>-->
 		<!--<div class="col-sm-6 col-md-6"></div>-->
 		<!--<div class="col-sm-6 col-md-6"></div>-->
+	</div>
 	</div>
 	</div>
 	<!--<div class="content bg">
