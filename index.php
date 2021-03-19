@@ -306,9 +306,6 @@ nav{
 	
 	
 <script type="text/javascript">
-// Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
-	
-	
 	
 	var elevationData = test3;
 
@@ -360,7 +357,7 @@ var myChart=new Chart(chr, {
     },
 
     title: {
-        text: '2017 Tour de France Stage 8: Dole - Station des Rousses'
+        text: 'Strategy Backtest Result'
     },
 
     accessibility: {
