@@ -61,12 +61,12 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 2</a>
+			<a href="#" class="brand-logo center">Administrator 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
 	</div>
-	<ul class="sidenav sidenav-fixed bg" id="slide-out">
+	<!--<ul class="sidenav sidenav-fixed bg" id="slide-out">
 		<li>
 			<div class="user-view">
 				<div class="background">
@@ -79,7 +79,7 @@ nav{
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
 		<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>
-	</ul>
+	</ul>-->
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
