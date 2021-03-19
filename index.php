@@ -19,7 +19,7 @@
       </script>
 	
 </head>
-<!--<style type="text/css">
+<style type="text/css">
 .bg{
 	background-image: linear-gradient(to top left,black,blue);
 }
@@ -39,12 +39,12 @@ nav{
 		padding-left: 0;
 	}
 }
-</style>-->
-<!--<script type="text/javascript">
+</style>
+<script type="text/javascript">
 	$(document).ready(function(){
 		$('.sidenav').sidenav();
 	});
-</script>-->
+</script>
 <body>
 	
 <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
@@ -69,7 +69,7 @@ nav{
 		</div>
 	</nav>
 	</div>
-	<ul class="sidenav sidenav-fixed bg" id="slide-out">
+	<!--<ul class="sidenav sidenav-fixed bg" id="slide-out">
 		<li>
 			<div class="user-view">
 				<div class="background">
@@ -82,7 +82,7 @@ nav{
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
 		<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>
-	</ul>
+	</ul>-->
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
