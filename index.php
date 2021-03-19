@@ -74,11 +74,11 @@ nav{
 		<li>
 			<div class="user-view">
 				<div class="background">
-					<img src="Untitled-1.jpg" width="100%">
+					<img src="network_map.png" width="100%">
 				</div>
-				<a href="#"><img src="pp.jpg" class="circle"></a>
+				<a href="#"><img src="Untitled-1.jpg" class="circle"></a>
 				<a href="#" class="white-text name">Andy Li</a>
-				<a href="#" class="white-text email">and.app28@gmail.com</a>/<br>
+				<a href="#" class="white-text email">and.app28@gmail.com</a>
 				<a href="#" class="white-text email">sli015@e.ntu.edu.sg</a>
 			</div>	
 		</li>
