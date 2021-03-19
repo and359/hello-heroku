@@ -61,7 +61,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -159,6 +159,8 @@ nav{
 	$data3 = '';
 	$data4 = '';
 	$data5 = '';
+	$data6 = '';
+	
 
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
@@ -169,11 +171,13 @@ nav{
 
 		$data1 = $data1 . '"'. $row['Price'].'",';
 		$date = $date . '"'. $row['PriceDate'] .'",';
+		$data6 = $data6 . '"'. $row['UnixTime'].'",';
 	}
 
 	$data1 = trim($data1,",");
 	//$data2 = trim($data2,",");
 	$date = trim($date,",");
+	$data6 = trim($data6,",");
 	
 	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
     	$result = mysqli_query($mysqli, $sql);
@@ -187,11 +191,17 @@ nav{
 		$data3 = $data3 . '"'. $row['TradeDate'].'",';
 		$data4 = $data4 . '"'. $row['Remarks'].'",';
 		$data5 = $data5 . '"'. $row['BuySell'].'",';
+		$data7 = $data7 . '"'. $row['UnixTime'].'",';
+		$data8 = $data8 . '"'. $row['Price'].'",';
+		
 	}
 
 	$data3 = trim($data3,",");
 	$data4 = trim($data4,",");
 	$data5 = trim($data5,",");
+	$data7 = trim($data7,",");
+	$data8 = trim($data8,",");
+	
 	
 	?>
 	<!--end of mysql-->
