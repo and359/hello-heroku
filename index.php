@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Collapse test 1</title>
+        <title>Collapse test 2</title>
         <!--<link href="css/bootstrap.css" rel="stylesheet">-->
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <!--<script src="js/bootstrap-collapse.js"></script>-->
     </head>
 	
-	<style type="text/css">
+	<style>
 	.hiddenRow {
   display: none;
 }
