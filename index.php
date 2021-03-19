@@ -61,7 +61,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 1</a>
+			<a href="#" class="brand-logo center">Administrator 2</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -272,7 +272,7 @@ nav{
 	
 
 // Now create the chart
-$(chr).Highcharts.chart('container1', {
+	Highcharts.chart('container1', {
 
     chart: {
         type: 'area',
