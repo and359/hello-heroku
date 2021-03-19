@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Collapse test</title>
+        <title>Collapse test 1</title>
         <!--<link href="css/bootstrap.css" rel="stylesheet">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap-collapse.js"></script>-->
@@ -20,7 +20,7 @@
               </button>
             </td>
         </tr>
-        <tr class="collapse out" id="collapseme"><td><div>Should be collapsed</div></td></tr>
+        <tr><td><div class="collapse out" id="collapseme">Should be collapsed</div></td></tr>
     </table>
 </body>
 </html>
