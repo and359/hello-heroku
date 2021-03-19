@@ -61,7 +61,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Administrator 2</a>
+			<a href="#" class="brand-logo center">Administrator 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -268,9 +268,37 @@ nav{
 	
 	
 	var elevationData = test3;
-	
-	
 
+//chart JS
+var myChart=new Chart(chr, {
+		//var chart = new Chart(ctx, {
+		   type: 'line',
+		   data: {
+			labels: [<?php echo $date; ?>],
+		      datasets: [{
+			 label: 'Close Price',
+			 data: [<?php echo $data1; ?>],
+			 backgroundColor: 'rgba(0, 119, 290, 0.2)',
+			 borderColor: 'rgba(0, 119, 290, 0.6)'
+		      }]
+		   },
+		   options: {
+		      scales: {
+			 yAxes: [{
+			    ticks: {
+			       beginAtZero: true
+			    }
+			 }]
+		      },
+		      annotation: {
+			 //drawTime: 'afterDatasetsDraw',
+			 drawTime: 'afterDraw',
+			 annotations: test3
+		      }
+		   }
+		});
+//end of chart JS
+	
 // Now create the chart
 	Highcharts.chart('container1', {
 
