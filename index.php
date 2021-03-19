@@ -14,19 +14,28 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>
-			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
+			<a href="#" class="brand-logo center">Trading Results: 2</a>	
 		</div>
 	</nav>
 	</div>
 
-	
+	<script>
+		$(".btn").click(function() {
+		    if($("#collapseme").hasClass("out")) {
+			$("#collapseme").addClass("in");
+			$("#collapseme").removeClass("out");
+		    } else {
+			$("#collapseme").addClass("out");
+			$("#collapseme").removeClass("in");
+		    }
+		});
+	</script>
 	
 	
 	<table class="table table-bordered table-striped">
         <tr>
             <td>
-              <button type="button" class="btn" data-toggle="collapse" data-target="#collapseme">
+              <button type="button" class="btn">
                 Click to expand
               </button>
             </td>
