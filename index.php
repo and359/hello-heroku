@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Collapse test 2</title>
+        <title>Collapse test 3</title>
         <!--<link href="css/bootstrap.css" rel="stylesheet">-->
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <!--<script src="js/bootstrap-collapse.js"></script>-->
@@ -17,14 +17,14 @@
 
         
         <script>
-            (function() {
+           (function() {
 	$('#carsTable .toggle').on('click', function() {
   	$('#carsTable .hideableRow').toggleClass('hiddenRow');
   })
 })()
         </script>
         
-   <table class="table table-sm table-hover">
+   <table class="table table-sm table-hover" id="carsTable">
 <thead class="thead-inverse">
 
 <thead>
@@ -35,25 +35,24 @@
     </tr>
 </thead>
 <tbody>
-    <tr data-toggle="collapse" data-target="#cars" class="accordion-toggle">
+    <tr data-toggle="collapse" data-target="#cars" class="toggle">
         <th colspan="6">Cars</th>
         <td colspan="3">456 mi</td>
         <td colspan="3">700 mi</td>
     </tr>
-    <tr class="hiddenRow"><div class="accordian-body collapse" id="cars">
+    <tr class="hideableRow">
         <td colspan="1"></td>
         <td colspan="5">Toyota</td>
         <td colspan="3">534 mi</td>
         <td colspan="3">800 mi</td>
     </tr>
-    <tr>
+    <tr class="hideableRow">
         <th colspan="1"></th>
         <th colspan="5">Honda</th>
         <td colspan="3">600 mi</td>
         <td colspan="3">770 mi</td>
     </tr>
-    </div>
 </tbody>
 </table>
-</body>
+	</body>
 </html>
