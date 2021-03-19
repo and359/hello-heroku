@@ -527,7 +527,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
 	
-	echo "<div class=""content bg""><div class=""container""><div class=""row""><div class=""col s12""><div class=""col l12 m6 s12""><div class=""card card-bg""><div class=""card-content""><tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc_"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr></div></div></div></div></div></div></div>";
+	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc_"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
 	
     }	echo "</table>";
 } else {
@@ -548,7 +548,7 @@ $conn->close();
 <script> document.write(new Date().toLocaleDateString()); </script>
 </p>
 
-
+<div class=""content bg""><div class=""container""><div class=""row""><div class=""col s12""><div class=""col l12 m6 s12""><div class=""card card-bg""><div class=""card-content""><table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr></div></div></div></div></div></div></div>
 
 	 		
 </body>
