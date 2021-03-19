@@ -492,6 +492,61 @@ var myChart=new Chart(chr, {
 	<!--</div>-->
 
 
+<br>
+	
+	
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<?php
+//echo "FINALLY!!! AUNTY IS STAYING!!!!";
+  
+$servername = "us-cdbr-east-03.cleardb.com";
+$username = "b8a00bf633cf68";
+$password = "1a8113a0";
+$dbname = "heroku_69459908ed082cc";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+//$sql = "SELECT * FROM heroku_69459908ed082cc.`s&p500_returns`;";
+	$sql = "SELECT * FROM heroku_69459908ed082cc.`rtd`;";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+	echo "<table border=1><tr><th>#</th><th>Ticker</th><th>Desc</th><th>Close Price</th><th>Returns</th><th>Sector</th><th>Industry</th><th>Volume</th><th>Index</th></tr>";
+	
+    while($row = $result->fetch_assoc()) {
+        //echo ++$row_num . ") Ticker: " . $row["Ticker"]. " - Value Date: " . $row["ValueDate"]. " - Close Price: " . $row["ClosePx"]. " Returns: " . $row["Returns_Percent"]. " - Volume: " . $row["Volume"]. " - Uploaded: " . $row["UploadTime"]. " " . "<br>";
+	
+	echo "<tr><td>" . ++$row_num . ")</td><td>" . $row["Ticker"]. "</td><td>" . $row["Desc_"]. "</td><td>" . $row["LastPx"]. "</td><td>" . $row["RtnPercent"]. "</td><td>" . $row["Sector"]. "</td><td>" . $row["Industry"]. "</td><td>" . $row["Volume"]. "</td><td>" . $row["Index_"]. "</td></tr>";
+	
+    }	echo "</table>";
+} else {
+    echo "0 results";
+}
+	
+	$sql = "select uploadtime from `heroku_69459908ed082cc`.`rtd` order by uploadtime desc limit 1;";
+$result = $conn->query($sql);
+	$row = $result->fetch_assoc();
+	echo "Table updated on: " . $row["uploadtime"] . "<br><br>";
+	
+$conn->close();
+	
+	//echo "TGIF";
+	
+?>
+	<p>
+<script> document.write(new Date().toLocaleDateString()); </script>
+</p>
 
 
 
