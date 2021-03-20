@@ -80,7 +80,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -215,7 +215,7 @@
 	$data6 = '';
 	
 	//query to get data from the table
-	$sql = "SELECT * FROM `backtest`;";
+	$sql = "SELECT * FROM `backtest` WHERE Ticker = " + txt + ";";
     	$result = mysqli_query($mysqli, $sql);
 
 	//loop through the returned data
