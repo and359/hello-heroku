@@ -71,7 +71,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -95,30 +95,13 @@
 	
 	<div class="container">
 		  <h2>Form control: select</h2>
-		  <form>
-		    <div class="form-group">
-		      <label for="sel1">Select list (select one):</label>
-		      <select class="form-control" id="sel1">
-			<option>ETSY</option>
-			<option>TSLA</option>
-			<option>IVW</option>
-		      </select>
-		      <br>
-		    </div>
-		    <button onclick="myFunction()">Try it</button>
-		  </form>
+		  
 	</div>
 	
 		<br><br>
 
-		<p id="demo"></p>
-		  <script>
-			    function myFunction() {
-			  var x = document.getElementById("sel1").value;
-			  document.getElementById("demo").innerHTML = x;
-			}
-
-		  </script>
+		
+		  
 
 	<!--End of dropdown list-->
 	
@@ -129,7 +112,29 @@
 		<div class="row">
 			<div class="col s12">
 				<h1 class="white-text">DashBoard</h1>
+				<form>
+				    <div class="form-group">
+				      <label for="sel1">Select list (select one):</label>
+				      <select class="form-control" id="sel1">
+					<option>ETSY</option>
+					<option>TSLA</option>
+					<option>IVW</option>
+				      </select>
+				      <br>
+				    </div>
+				    <button onclick="myFunction()">Try it</button>
+				 </form>
 			</div>
+			
+			<p id="demo"></p>
+			<script>
+			    function myFunction() {
+			  	var x = document.getElementById("sel1").value;
+			  	document.getElementById("demo").innerHTML = x;
+				}
+
+		  	</script>
+			
 			<div class="col s12 m6 l3">
 				<div class="card card-bg white-text">
 					<div class="card-content center">
