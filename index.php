@@ -7,6 +7,7 @@
   <body>
     <form method="POST">
       <p>Please, choose the salary id to proceed result:</p>
+<!--
       <p>
         <label for="salarieids">SalarieID:</label>
         <?php
@@ -22,7 +23,7 @@
         <select id="salarieids" name="salarieid">
           <?php
             while ($row = mysql_fetch_assoc($result)) {
-              echo '<option value="', $row['Ticker'], '">', $row['Ticker'], '</option>'; //between <option></option> tags you can output something more human-friendly (like $row['name'], if table "salaried" have one)
+              echo '<option value="', $row['TICKER'], '">', $row['TICKER'], '</option>'; //between <option></option> tags you can output something more human-friendly (like $row['name'], if table "salaried" have one)
             }
           ?>
         </select>
@@ -33,7 +34,7 @@
       </p>
     </form>
 
-    <?php if isset($_POST['Ticker']) : ?>
+    <?php if isset($_POST['TICKER']) : ?>
       <?php
         $query = "SELECT * FROM `backtest` WHERE Ticker = '" . $_POST['salarieid'] . "';";
         $result = mysql_query($query);
@@ -50,5 +51,7 @@
         </table>
       <?php endif?>
     <?php endif ?>
+
+-->
   </body>
 </html>
