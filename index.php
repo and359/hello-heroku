@@ -92,7 +92,7 @@
 					<img src="Backgrd.jpg" width="100%">
 				</div>
 				<a href="#"><img src="Untitled-1.jpg" class="circle"></a>
-				<a href="#" class="white-text name">Andy Li</a>
+				<a href="#" class="white-text name">Andy Li (CA, FMVA, FRM)</a>
 				<a href="#" class="white-text email">and.app28@gmail.com</a>
 				<a href="#" class="white-text email">sli015@e.ntu.edu.sg</a>
 			</div>	
