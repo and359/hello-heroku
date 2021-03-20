@@ -35,25 +35,23 @@
 				<div class="card card-bg">
 					<div class="card-content">
 						<!--<canvas id="sel1"></canvas>-->
-						<form><div class="form-group">
-						      <label for="sel1">Select list (select one):</label>
-						      <select class="form-control" id="sel1">
-							<option>ETSY</option>
+						<div class="dropdown">
+						  <select class="form-control" id="sel1">
+						    <option>ETSY</option>
 							<option>TSLA</option>
 							<option>IVW</option>
 						      </select>
-						      <br>
-						    </div>
-						    <button onclick="myFunction()">Try it</button>
-						 </form>
+						  <button onclick="myFunction1()">Try it</button>
+						</div>
+
 						<p id="demo"></p>
-						<script>
-						    function myFunction() {
-							var x = document.getElementById("sel1").value;
-							document.getElementById("demo").innerHTML = x;
+						  <script>
+							    function myFunction1() {
+							  var x = document.getElementById("sel1").value;
+							  document.getElementById("demo").innerHTML = x;
 							}
 
-						</script>
+						  </script>
 					</div>
 				</div>
 			</div>
