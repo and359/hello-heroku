@@ -75,6 +75,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 -->
 
+<!--
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
@@ -97,6 +98,7 @@
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
 	</ul>
+-->
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
