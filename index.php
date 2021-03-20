@@ -24,44 +24,43 @@
 	}
 	</style>
 </head>
-<style type="text/css">
-.bg{
-	background-image: linear-gradient(to top left,black,blue);
-}
-nav{
-	background-image: linear-gradient(to top right,red,yellow); 
-	padding-left: 200px;
-	padding-right: -200px;
-}
-.content{
-	padding-left: 200px;
-	padding-right: -200px;
-	height:100%;
-}
-.card-bg{
-	background: rgba(0,0,0,0);
-}
-@media only screen and (max-width: 992px){
-	.content,nav{
-		padding-left: 0;
-	}
-}
-</style>
+
+	<style type="text/css">
+		.bg{
+			background-image: linear-gradient(to top left,black,blue);
+		}
+		nav{
+			background-image: linear-gradient(to top right,red,yellow); 
+			padding-left: 200px;
+			padding-right: -200px;
+		}
+		.content{
+			padding-left: 200px;
+			padding-right: -200px;
+			height:100%;
+		}
+		.card-bg{
+			background: rgba(0,0,0,0);
+		}
+		@media only screen and (max-width: 992px){
+			.content,nav{
+				padding-left: 0;
+			}
+		}
+	</style>
+	
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.sidenav').sidenav();
 	});
 </script>
-<body>
 	
-
-<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+<body>
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/annotations.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -72,7 +71,7 @@ nav{
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -90,7 +89,6 @@ nav{
 			</div>	
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
-		<!--<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>-->
 	</ul>
 	<div class="content bg">
 		<div class="container">
@@ -175,7 +173,6 @@ nav{
 	$data5 = '';
 	$data6 = '';
 	
-
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
     	$result = mysqli_query($mysqli, $sql);
@@ -233,33 +230,12 @@ nav{
 				</div>
 			</div>
 		</div>
-		<!--<div class="col-sm-6 col-md-6"></div>-->
-		<!--<div class="col-sm-6 col-md-6"></div>-->
-		<!--<div class="col-sm-6 col-md-6"></div>-->
 	</div>
 	</div>
 	</div>
-	<!--<div class="content bg">
-		<div class="container">
-		<div class="row">
-			<div class="col s12">
-				<h1 class="white-text">DashBoard</h1>
-			</div>
-			<div class="col l12 m6 s12">
-				<div class="card card-bg">
-					<div class="card-content">
-						<canvas id="myChart"></canvas>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>-->
-	
 			
 		<!--<h1><?php echo $data2; ?> Share Price</h1>-->	   
-		<!--<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
-	
+		
 	<script type="text/javascript">
 		var chr=document.getElementById("myChart").getContext("2d");
 		var chr2=document.getElementById("myChart2").getContext("2d");
@@ -346,7 +322,7 @@ var myChart=new Chart(chr, {
 		});
 //end of chart JS
 	
-// Now create the chart
+//Highchart
 	Highcharts.chart('container1', {
 
     chart: {
@@ -367,66 +343,19 @@ var myChart=new Chart(chr, {
         text: 'Strategy Backtest Result'
     },
 
-    accessibility: {
-        description: 'Image description: An annotated line graph illustrates the 8th stage of the 2017 Tour de France cycling race from the start point in Dole to the finish line at Station des Rousses. Altitude is plotted on the Y-axis at increments of 500m and distance is plotted on the X-axis in increments of 25 kilometers. The line graph is interactive, and the user can trace the altitude level at every 100-meter point along the stage. The graph is shaded below the data line to visualize the mountainous altitudes encountered on the 187.5-kilometre stage. The three largest climbs are highlighted at Col de la Joux, Côte de Viry and the final 11.7-kilometer, 6.4% gradient climb to Montée de la Combe de Laisia Les Molunes which peaks at 1200 meters above sea level. The stage passes through the villages of Arbois, Montrond, Bonlieu, Chassal and Saint-Claude along the route.'
-    },
-
-    credits: {
+        credits: {
         enabled: false
     },
 	
 	
-    annotations: test4
-	/*[
-	    {labelOptions: {
-            backgroundColor: 'rgba(255,255,255,0.5)',
-            verticalAlign: 'top',
-            y: 15
-        },
-        labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 1583798400000,
-                y: 57.970001
-            },
-            text: 'Arbois'
-        }]}, 
-	{labels: [{
-            point: {
-                xAxis: 0,
-                yAxis: 0,
-                x: 1613692800000,
-                y: 227.270004
-            },
-            x: -30,
-            text: 'Col de la Joux'
-        }]}
-		 ]*/,	
+    annotations: test4,	
 
     xAxis: {
 	    labels: {
       format: "{value:%b %e}"
     },
-    //tickInterval: 604800000,
-    type: "datetime"//,
-    //min: 1569888000000
-	    /*,
-      labels: {
-        formatter: function() {
-          return Highcharts.dateFormat('%b/%e/%Y', this.value);
-        }
-      }*/
-        /*labels: {
-            format: '{value}'
-        },
-        minRange: 5,
-        title: {
-            text: 'Distance'
-        },
-        accessibility: {
-            rangeDescription: 'Range: 0 to 187.8km.'
-        }*/
+    
+    type: "datetime"
     },
 
     yAxis: {
@@ -447,9 +376,7 @@ var myChart=new Chart(chr, {
                     Highcharts.dateFormat('%e - %b - %Y',
                                           new Date(this.x))
                 + ' date, ' + this.y ;
-            }//,headerFormat: 'Date: {point.x}<br>',
-        //pointFormat: '{point.y}',
-        //shared: true
+            }
     },
 
     legend: {
@@ -474,7 +401,9 @@ var myChart=new Chart(chr, {
     }]
 
 });		
-//end of chart 1		
+//end of Highchart
+	
+	
 		var myChart2=new Chart(chr2,{
 			type:'line',
 			data:{
@@ -496,7 +425,6 @@ var myChart=new Chart(chr, {
 			}
 		});
 	</script>
-	<!--</div>-->
 
 
 <br>
