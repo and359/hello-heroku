@@ -71,7 +71,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -91,40 +91,12 @@
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
 	</ul>
 	
-	<!--Dropdown list-->
-	
-	<!--End of dropdown list-->
-	
-	
-	
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
 			<div class="col s12">
 				<h1 class="white-text">DashBoard</h1>
-				<form>
-				    <div class="form-group">
-				      <label for="sel1">Select list (select one):</label>
-				      <select class="form-control" id="sel1">
-					<option>ETSY</option>
-					<option>TSLA</option>
-					<option>IVW</option>
-				      </select>
-				      <br>
-				    </div>
-				    <button onclick="myFunction()">Try it</button>
-				 </form>
 			</div>
-			
-			<p id="demo"></p>
-			<script>
-			    function myFunction() {
-			  	var x = document.getElementById("sel1").value;
-			  	document.getElementById("demo").innerHTML = x;
-				}
-
-		  	</script>
-			
 			<div class="col s12 m6 l3">
 				<div class="card card-bg white-text">
 					<div class="card-content center">
@@ -170,6 +142,13 @@
 			<div class="col l12 m6 s12">
 				<div class="card card-bg">
 					<div class="card-content">
+						<canvas id="sel1"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
 						<canvas id="myChart"></canvas>
 					</div>
 				</div>
@@ -185,6 +164,29 @@
 	</div>
 	</div>
 	
+<!--Dropdown list-->
+	
+				<form><div class="form-group">
+				      <label for="sel1">Select list (select one):</label>
+				      <select class="form-control" id="sel1">
+					<option>ETSY</option>
+					<option>TSLA</option>
+					<option>IVW</option>
+				      </select>
+				      <br>
+				    </div>
+				    <button onclick="myFunction()">Try it</button>
+				 </form>
+				<p id="demo"></p>
+				<script>
+				    function myFunction() {
+					var x = document.getElementById("sel1").value;
+					document.getElementById("demo").innerHTML = x;
+					}
+
+		  		</script>
+<!--End of dropdown list-->
+
 	<!--get data from mysql-->
 	<?php
 	/* Database connection settings */
