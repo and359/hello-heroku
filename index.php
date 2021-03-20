@@ -19,7 +19,7 @@
 <p>Choose a car, and click the "Submit" button to send input to the server.</p>
 
   <script>
-    document.getElementById("cars").value;
+    document.getElementById("cars").innerHTML;
     
   </script>
 </body>
