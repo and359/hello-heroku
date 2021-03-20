@@ -72,7 +72,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -142,22 +142,31 @@
 			<div class="col l12 m6 s12">
 				<div class="card card-bg">
 					<div class="card-content">
-						<div class="dropdown">
-							<select class="form-control" id="sel1">
-							    	<option>ETSY</option>
-								<option>TSLA</option>
-								<option>IVW</option>
-							</select>
-						<button onclick="myFunction1()">Try it</button>
-						</div>
-						<p id="demo"></p>
-							  <script>
-							    function myFunction1() {
-							  	var x = document.getElementById("sel1").value;
-							  	document.getElementById("demo").innerHTML = x;
-								}
+						<form action="/action_page.php">
+                          			<div id="demo1" align="center"  value="1">
+                      				<h3 style="color:orange; font-size:30px;">Choose Stock to Backtest</h3>
+                      					<input type="radio" name="group1" id="color1" value="ETSY"  onClick="changeColor()"/><label for="color1">ETSY</label>
+                      					<input type="radio" name="group1" id="color2" value="TSLA" onClick="changeColor()"/><label for="color2">TSLA</label>
+                      					<input type="radio" name="group1" id="color3" value="IVW" onClick="changeColor()" /><label for="color3">IVW</label><br><br><br>
+                  		  		</div>
+                  				</form>
 
-							  </script>
+                  				<input type="button" onclick="myFunction()" value="Run Backtest">
+                  				<input type="text" id="order" size="30" style="color:orange; font-size:20px;">
+
+                  				<script>
+                                    			function myFunction() {
+                                      				var group1 = document.forms[0];
+                                      				var txt = "";
+                                      				var i;
+                                      				for (i = 0; i < group1.length; i++) {
+                                        				if (group1[i].checked) {
+                                          				txt = txt + group1[i].value + " ";
+                                        				}
+                                      				}
+                                      			document.getElementById("order").value = "You Picked: " + txt;
+                  					}
+                  				</script>
 
 					</div>
 				</div>
