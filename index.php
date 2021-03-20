@@ -71,7 +71,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -90,6 +90,40 @@
 		</li>
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
 	</ul>
+	
+	<!--Dropdown list-->
+	<div class="content bg"> 
+	<div class="container">
+		  <h2>Form control: select</h2>
+		  <form>
+		    <div class="form-group">
+		      <label for="sel1">Select list (select one):</label>
+		      <select class="form-control" id="sel1">
+			<option>ETSY</option>
+			<option>TSLA</option>
+			<option>IVW</option>
+		      </select>
+		      <br>
+		    </div>
+		    <button onclick="myFunction()">Try it</button>
+		  </form>
+	</div>
+	</div>
+		<br><br>
+
+		<p id="demo"></p>
+		  <script>
+			    function myFunction() {
+			  var x = document.getElementById("sel1").value;
+			  document.getElementById("demo").innerHTML = x;
+			}
+
+		  </script>
+
+	<!--End of dropdown list-->
+	
+	
+	
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
