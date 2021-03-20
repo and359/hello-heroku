@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Trading Analytics</title>
-<!--
+<!--	<title>Trading Analytics</title>
+
 	<!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -116,7 +116,7 @@
   					document.getElementById("demo").innerHTML = x;
 					}
   			</script>
-			
+<!--			
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
@@ -190,7 +190,7 @@
 		</div>
 	</div>
 	</div>
-	
+-->	
 	<!--get data from mysql-->
 	<?php
 	/* Database connection settings */
