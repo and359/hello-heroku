@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<h1>The option value attribute </h1>
+<h1>The option value attribute 1</h1>
 
-<form>
+<!--<form>
 <label for="cars">Choose a car:</label>
 
 <select id="cars" name="cars">
@@ -13,16 +13,32 @@
   <option value="mercedes">Mercedes SLK</option>
   <option value="audi">Audi TT</option>
 </select>
-<!--<input type="submit" value="Submit">-->
-<button onclick="myFunction()">Try it</button>
-</form>
 
-<p>Choose a car, and click the "Submit" button to send input to the server.</p><br><br>
+<button onclick="myFunction()">Try it</button>
+</form>-->
+
+ <div class="container">
+  <h2>Form control: select</h2>
+  <form>
+    <div class="form-group">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+    </div>
+    <button onclick="myFunction()">Try it</button>
+  </form>
+</div>
+<br><br>
   
 <p id="demo"></p>
   <script>
     function myFunction() {
-  var x = document.getElementById("cars").value;
+  var x = document.getElementById("sel1").value;
   document.getElementById("demo").innerHTML = x;
 }
     
