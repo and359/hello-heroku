@@ -74,7 +74,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -156,8 +156,7 @@
 	$data3 = '';
 	$data4 = '';
 	$data5 = '';
-	$data6 = '';
-	
+
 	//query to get data from the table
 	$sql = "SELECT * FROM `backtest`;";
     	$result = mysqli_query($mysqli, $sql);
@@ -167,74 +166,60 @@
 
 		$data1 = $data1 . '"'. $row['Price'].'",';
 		$date = $date . '"'. $row['PriceDate'] .'",';
-		$data6 = $data6 . '"'. $row['UnixTime'].'",';
 	}
 
 	$data1 = trim($data1,",");
 	//$data2 = trim($data2,",");
 	$date = trim($date,",");
-	$data6 = trim($data6,",");
-		
+	
+	$sql = "select Ticker from `heroku_69459908ed082cc`.`backtest` order by Ticker desc limit 1;";
+    	$result = mysqli_query($mysqli, $sql);
+	$row = mysqli_fetch_array($result);
+	$data2 = $data2 . $row['Ticker'];
+	
+	$sql = "select * from `heroku_69459908ed082cc`.`buy_sell`;";
+    	$result = mysqli_query($mysqli, $sql);
+	while ($row = mysqli_fetch_array($result)) {
+
+		$data3 = $data3 . '"'. $row['TradeDate'].'",';
+		$data4 = $data4 . '"'. $row['Remarks'].'",';
+		$data5 = $data5 . '"'. $row['BuySell'].'",';
+	}
+
+	$data3 = trim($data3,",");
+	$data4 = trim($data4,",");
+	$data5 = trim($data5,",");
+	
 	?>
 	<!--end of mysql-->
+	
+	<!--<div class="container">-->	
 			
-		
-		
+		<!--<h1><?php echo $data2; ?> Share Price</h1>-->	   
+		<!--<canvas id="ctx" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>-->
+	
 	<script type="text/javascript">
 		var chr=document.getElementById("myChart").getContext("2d");
-		
+		var chr2=document.getElementById("myChart2").getContext("2d");
 		
 //chart 1		
-		var marketing = [<?php echo $data6; ?>];
-		var amount = [<?php echo $data1; ?>];
-		var marketing3 = [<?php echo $data7; ?>];
-		var amount4 = [<?php echo $data4; ?>];
-		var px4 = [<?php echo $data8; ?>];
+		var marketing = [<?php echo $data3; ?>];
+		var amount = [<?php echo $data4; ?>];
 		var B_S = [<?php echo $data5; ?>];
-		var marketing4 = [<?php echo $data3; ?>];
 		var txt = "";
 		
 		var test3 = marketing.map(function(date1, index1) {
 		
-			
-			return [
-			Number(marketing[index1]), Number(amount[index1])
-			];
-		
-		});
-		
-		//annotations	
-		var test4 = marketing3.map(function(date2, px2) {
-		
-			if (B_S[px2]=='Buy'){
+			if (B_S[index1]=='Buy'){
 			return {
-			//type: 'line', borderColor: 'green', id: 'vline' + index2, mode: 'vertical', scaleID: 'x-axis-0', value: date2, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount4[index2]}}
-			labelOptions: {backgroundColor: 'rgba(255,255,255,0.5)',verticalAlign: 'top',y: 15},labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},text: amount4[px2]}]}
+			type: 'line', borderColor: 'green', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index1]}}
 			} else {
 			return{
-			//type: 'line', borderColor: 'red', id: 'vline' + index2, mode: 'vertical', scaleID: 'x-axis-0', value: date2, borderWidth: 1, label: {enabled: true, position: "top", content: amount4[index2]}}
-			labels: [{point: {xAxis: 0,yAxis: 0,x: date2,y: px4[px2]},x: -30,text: amount4[px2]}]}
-			};
-		
-		});	
-		
-		var test5 = marketing4.map(function(date3, index3) {
-		
-			if (B_S[index3]=='Buy'){
-			return {
-			type: 'line', borderColor: 'green', id: 'vline' + index3, mode: 'vertical', scaleID: 'x-axis-0', value: date3, borderWidth: 1, label: {enabled: true, position: "bottom", content: amount[index3]}}
-			} else {
-			return{
-			type: 'line', borderColor: 'red', id: 'vline' + index3, mode: 'vertical', scaleID: 'x-axis-0', value: date3, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index3]}}
+			type: 'line', borderColor: 'red', id: 'vline' + index1, mode: 'vertical', scaleID: 'x-axis-0', value: date1, borderWidth: 1, label: {enabled: true, position: "top", content: amount[index1]}}
 			};
 		
 		});		
-		</script>
-	
-	
-<script type="text/javascript">
-	
-	var elevationData = test3;
+
 
 //chart JS
 var myChart=new Chart(chr, {
@@ -260,7 +245,7 @@ var myChart=new Chart(chr, {
 		      annotation: {
 			 //drawTime: 'afterDatasetsDraw',
 			 drawTime: 'afterDraw',
-			 annotations: test5
+			 annotations: test3
 		      }
 		   }
 		});
