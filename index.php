@@ -71,7 +71,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -139,9 +139,9 @@
 				</div>
 			</div>
 			<div class="col l12 m6 s12">
-				<div class="card card-bg">
+				<!--<div class="card card-bg">-->
 					<!--<div class="card-content">-->
-						<h2>Form control: select</h2>
+						<!--<h2>Form control: select</h2>-->
 						<div class="dropdown">
 						<select class="form-control" id="sel1">
 							<option>ETSY</option>
@@ -151,7 +151,7 @@
 						<button onclick="myFunction1()">Try it</button>
 						</div>
 					<!--</div>-->
-				</div>
+				<!--</div>-->
 			</div>
 			<p id="demo"></p>
 			<script>
