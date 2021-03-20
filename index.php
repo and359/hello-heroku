@@ -71,7 +71,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -142,7 +142,26 @@
 			<div class="col l12 m6 s12">
 				<div class="card card-bg">
 					<div class="card-content">
-						<canvas id="sel1"></canvas>
+						<!--<canvas id="sel1"></canvas>-->
+						<form><div class="form-group">
+						      <label for="sel1">Select list (select one):</label>
+						      <select class="form-control" id="sel1">
+							<option>ETSY</option>
+							<option>TSLA</option>
+							<option>IVW</option>
+						      </select>
+						      <br>
+						    </div>
+						    <button onclick="myFunction()">Try it</button>
+						 </form>
+						<p id="demo"></p>
+						<script>
+						    function myFunction() {
+							var x = document.getElementById("sel1").value;
+							document.getElementById("demo").innerHTML = x;
+							}
+
+						</script>
 					</div>
 				</div>
 			</div>
@@ -166,25 +185,7 @@
 	
 <!--Dropdown list-->
 	
-				<form><div class="form-group">
-				      <label for="sel1">Select list (select one):</label>
-				      <select class="form-control" id="sel1">
-					<option>ETSY</option>
-					<option>TSLA</option>
-					<option>IVW</option>
-				      </select>
-				      <br>
-				    </div>
-				    <button onclick="myFunction()">Try it</button>
-				 </form>
-				<p id="demo"></p>
-				<script>
-				    function myFunction() {
-					var x = document.getElementById("sel1").value;
-					document.getElementById("demo").innerHTML = x;
-					}
-
-		  		</script>
+				
 <!--End of dropdown list-->
 
 	<!--get data from mysql-->
@@ -324,8 +325,7 @@
 	var elevationData = test3;
 
 //chart JS
-var myChart=new Chart(chr, {
-		//var chart = new Chart(ctx, {
+var myChart=new Chart(chr, {		
 		   type: 'line',
 		   data: {
 			labels: [<?php echo $date; ?>],
