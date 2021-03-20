@@ -71,7 +71,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: 1</a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -92,7 +92,7 @@
 	</ul>
 	
 	<!--Dropdown list-->
-	<div class="content bg"> 
+	
 	<div class="container">
 		  <h2>Form control: select</h2>
 		  <form>
@@ -108,7 +108,7 @@
 		    <button onclick="myFunction()">Try it</button>
 		  </form>
 	</div>
-	</div>
+	
 		<br><br>
 
 		<p id="demo"></p>
