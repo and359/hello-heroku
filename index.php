@@ -99,6 +99,24 @@
 		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
 	</ul>
 -->
+	
+			<div class="dropdown">
+				<select class="form-control" id="sel1">
+					<option>ETSY</option>
+					<option>TSLA</option>
+					<option>IVW</option>
+				</select>
+				<button onclick="myFunction1()">Try it</button>
+			</div>
+
+			<p id="demo"></p>
+			<script>
+    				function myFunction1() {
+  					var x = document.getElementById("sel1").value;
+  					document.getElementById("demo").innerHTML = x;
+					}
+  			</script>
+			
 	<div class="content bg">
 		<div class="container">
 		<div class="row">
@@ -151,24 +169,10 @@
 				<div class="card card-bg">
 					<!--<div class="card-content">-->
 						<!--<h2>Form control: select</h2>-->
-						<div class="dropdown">
-						<select class="form-control" id="sel1">
-							<option>ETSY</option>
-							<option>TSLA</option>
-							<option>IVW</option>
-						</select>
-						<button onclick="myFunction1()">Try it</button>
-						</div>
 					<!--</div>-->
 				</div>
 			</div>
-			<p id="demo"></p>
-			<script>
-    				function myFunction1() {
-  					var x = document.getElementById("sel1").value;
-  					document.getElementById("demo").innerHTML = x;
-					}
-  			</script>
+			
 			<div class="col l12 m6 s12">
 				<div class="card card-bg">
 					<div class="card-content">
