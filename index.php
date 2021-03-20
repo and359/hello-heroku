@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>The option value attribute </h1>
+<h1>The option value attribute 1</h1>
 
 <!--<form>
 <label for="cars">Choose a car:</label>
@@ -23,10 +23,9 @@
     <div class="form-group">
       <label for="sel1">Select list (select one):</label>
       <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+        <option>ETSY</option>
+        <option>TSLA</option>
+        <option>IVW</option>
       </select>
       <br>
     </div>
