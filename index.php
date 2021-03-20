@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<h1>The option value attribute 1</h1>
+<h1>The option value attribute </h1>
 
-<form action="myFunction()">
+<form>
 <label for="cars">Choose a car:</label>
 
 <select id="cars" name="cars">
@@ -13,7 +13,8 @@
   <option value="mercedes">Mercedes SLK</option>
   <option value="audi">Audi TT</option>
 </select>
-<input type="submit" value="Submit">
+<!--<input type="submit" value="Submit">-->
+<button onclick="myFunction()">Try it</button>
 </form>
 
 <p>Choose a car, and click the "Submit" button to send input to the server.</p><br><br>
