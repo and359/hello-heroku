@@ -215,7 +215,7 @@
 	$data6 = '';
 	
 	//query to get data from the table
-	$sql = "SELECT * FROM `backtest` WHERE Ticker = " + txt + ";";
+	$sql = "SELECT * FROM `backtest` WHERE Ticker = '" + txt + "';";
     	$result = mysqli_query($mysqli, $sql);
 
 	//loop through the returned data
