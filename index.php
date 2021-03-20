@@ -74,7 +74,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results: 1</a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -219,10 +219,8 @@
 			};
 		
 		});		
-
-
-//chart JS
-var myChart=new Chart(chr, {
+		
+		var myChart=new Chart(chr, {
 		//var chart = new Chart(ctx, {
 		   type: 'line',
 		   data: {
@@ -249,11 +247,31 @@ var myChart=new Chart(chr, {
 		      }
 		   }
 		});
-//end of chart JS
-  
-	<p>
-<script> document.write(new Date().toLocaleDateString()); </script>
-</p>
+		
+//end of chart 1		
+		var myChart2=new Chart(chr2,{
+			type:'line',
+			data:{
+				labels:['Monday','Tuesday','Wednesday','Thursday','fiday'],
+				datasets:[{
+					label:'Data Users',
+					data:[100,512,150,120,190],
+					backgroundColor:'rgba(0,0,0,0)',
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				legend:{
+					labels:{
+						fontColor:'#fff',
+					}
+				}
+			}
+		});
+	</script>
+	<!--</div>-->
+
 
 	 		
 </body>
