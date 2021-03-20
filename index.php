@@ -10,16 +10,7 @@
 
       <p>
         <label for="salarieids">SalarieID:</label>
-        <?php
-	$host = 'us-cdbr-east-03.cleardb.com';
-	$user = 'b8a00bf633cf68';
-	$pass = '1a8113a0';
-	$db = 'heroku_69459908ed082cc';
-	$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
-          $query = "SELECT TICKER FROM heroku_69459908ed082cc.backtest GROUP BY(TICKER)";
-          $result = mysql_query($mysqli , $query);
-          
-        ?>
+        
         <select id="salarieids" name="salarieid">
           
         </select>
