@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>The option value attribute 1</h1>
+<h1>The option value attribute </h1>
 
 <!--<form>
 <label for="cars">Choose a car:</label>
