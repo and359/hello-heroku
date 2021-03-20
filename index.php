@@ -5,7 +5,7 @@
   </head>
 
   <body>
-    <h1>1</h1><br>
+    <h1>2</h1><br>
     <form method="POST">
       <p>Please, choose the salary id to proceed result:</p>
 
@@ -30,14 +30,13 @@
                                   //query to get data from the table
                                   $sql = "SELECT Ticker FROM heroku_69459908ed082cc.backtest GROUP BY(Ticker);";
                                       $result = mysqli_query($mysqli, $sql);
+                                    while ($row = mysql_fetch_assoc($result)) {
+                                      echo '<option value="', $row['Ticker'], '">', $row['Ticker'], '</option>'; 
+                                      }
                                 ?>
                                   <select id="salarieids" name="salarieid">
                                 
-                                    <?php
-                                      while ($row = mysql_fetch_assoc($result)) {
-                                      echo '<option value="', $row['Ticker'], '">', $row['Ticker'], '</option>'; 
-                                      }
-                                    ?>
+                                    
                                   
                                   
 
