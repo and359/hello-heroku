@@ -257,7 +257,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results </a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -875,7 +875,7 @@ $conn->close();
 		<div class="row">
 			<div class="col l12 m6 s12">
 				<div class="card card-bg">
-					<div class="card-content">
+					<div class="card-content" style="color:orange; font-size:20px;">
 						<?php
 							$servername = "us-cdbr-east-03.cleardb.com";
 							$username = "b8a00bf633cf68";
