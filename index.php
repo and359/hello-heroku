@@ -193,7 +193,7 @@
     	$result = mysqli_query($mysqli, $sql);
 	while ($row = mysqli_fetch_array($result)) {		
 		$B_SETSY = $B_SETSY . '"'. $row['BuySell'].'",';
-		$B_SPxETSY = $B_SPxETSY . '"'. $row['Remarks'].'",';
+		$B_SPxETSY = $B_SPxETSY . '"'. $row['Price'].'",';
 		$B_SDateETSY = $B_SDateETSY . '"'. $row['TradeDate'].'",';
 	}
 
@@ -208,7 +208,7 @@
     	$result = mysqli_query($mysqli, $sql);
 	while ($row = mysqli_fetch_array($result)) {		
 		$B_STSLA = $B_STSLA . '"'. $row['BuySell'].'",';
-		$B_SPxTSLA = $B_SPxTSLA . '"'. $row['Remarks'].'",';
+		$B_SPxTSLA = $B_SPxTSLA . '"'. $row['Price'].'",';
 		$B_SDateTSLA = $B_SDateTSLA . '"'. $row['TradeDate'].'",';
 	}
 
@@ -223,7 +223,7 @@
     	$result = mysqli_query($mysqli, $sql);
 	while ($row = mysqli_fetch_array($result)) {		
 		$B_SIVW = $B_SIVW . '"'. $row['BuySell'].'",';
-		$B_SPxIVW = $B_SPxIVW . '"'. $row['Remarks'].'",';
+		$B_SPxIVW = $B_SPxIVW . '"'. $row['Price'].'",';
 		$B_SDateIVW = $B_SDateIVW . '"'. $row['TradeDate'].'",';
 	}
 
