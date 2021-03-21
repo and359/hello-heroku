@@ -729,7 +729,7 @@ var myChart=new Chart(chr, {
     },
 
     title: {
-        text: 'Strategy Backtest Result'
+        text: 'Monte Carlo Simulation'
     },
 
         credits: {
@@ -782,7 +782,7 @@ var myChart=new Chart(chr, {
         lineColor: Highcharts.getOptions().colors[1],
         color: Highcharts.getOptions().colors[2],
         fillOpacity: 0.5,
-        name: 'Elevation',
+        name: 'Price',
         marker: {
             enabled: false
         },
