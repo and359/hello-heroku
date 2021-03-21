@@ -257,7 +257,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -868,6 +868,31 @@ $conn->close();
 	//echo "TGIF";
 	
 ?>
+	
+	
+	<div class="content bg">
+		<div class="container">
+		<div class="row">
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
+						<?php
+							$servername = "us-cdbr-east-03.cleardb.com";
+							$username = "b8a00bf633cf68";
+							$password = "1a8113a0";
+							$dbname = "heroku_69459908ed082cc";
+
+							// Create connection
+							$conn = new mysqli($servername, $username, $password, $dbname);
+							$sql = "select uploadtime from `heroku_69459908ed082cc`.`rtd` order by uploadtime desc limit 1;";
+							$result = $conn->query($sql);
+							$row = $result->fetch_assoc();
+							echo "Table updated on: " . $row["uploadtime"] . "<br><br>";
+	
+							$conn->close();
+						?>
+						</div></div></div></div></div></div>
+						
 	<p>
 <script> document.write(new Date().toLocaleDateString()); </script>
 </p>
