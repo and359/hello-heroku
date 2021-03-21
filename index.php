@@ -130,7 +130,7 @@
 	//loop through the returned data
 	while ($row = mysqli_fetch_array($result)) {
 
-		$pxETSY = $pxETSY . '"'. $row['Price'].'",';
+		$pxETSY = $pxETSY . '"'. $row['Remarks'].'",';
 		$dateETSY = $dateETSY . '"'. $row['PriceDate'] .'",';
 	}
 	
@@ -146,7 +146,7 @@
 	//loop through the returned data
 	while ($row = mysqli_fetch_array($result)) {
 
-		$pxTSLA = $pxTSLA . '"'. $row['Price'].'",';
+		$pxTSLA = $pxTSLA . '"'. $row['Remarks'].'",';
 		$dateTSLA = $dateTSLA . '"'. $row['PriceDate'] .'",';
 	}
 	
@@ -162,7 +162,7 @@
 	//loop through the returned data
 	while ($row = mysqli_fetch_array($result)) {
 
-		$pxIVW = $pxIVW . '"'. $row['Price'].'",';
+		$pxIVW = $pxIVW . '"'. $row['Remarks'].'",';
 		$dateIVW = $dateIVW . '"'. $row['PriceDate'] .'",';
 	}
 	
@@ -257,7 +257,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
