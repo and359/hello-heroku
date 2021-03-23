@@ -334,9 +334,9 @@
 								   });
 								  }
 								 //});
-								setInterval(function(){//setInterval() method execute on every interval until called clearInterval()
+								setInterval(function(){setInterval() method execute on every interval until called clearInterval()
 								  
-									//$('#myChart').load("fetch.php").fadeIn("slow");
+									$('#ETSYTE').load("fetch.php").fadeIn("slow");
 								  
 								 	}, 1000);
 								});
@@ -448,7 +448,12 @@
 								b4ifdateIVW = "";
 								b4ifpxIVW = "";
 								
-								etsytotalequity = "10,000.00";
+								<p>Total Equity</p>
+								<!--<h5>$12,476.00</h5>-->
+								<h5><script>etsytotalequity</script></h5>
+								<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+								<b class="green-text">24.76%</b>
+					
 								 myChart=new Chart(chr, {
 								//var chart = new Chart(ctx, {
 								   type: 'line',
@@ -567,12 +572,8 @@
 			</div>
 			<div class="col s12 m6 l3">
 				<div class="card card-bg white-text">
-					<div class="card-content center">
-						<p>Total Equity</p>
-						<!--<h5>$12,476.00</h5>-->
-						<h5><script>etsytotalequity</script></h5>
-						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
-						<b class="green-text">24.76%</b>
+					<div class="card-content center" id="ETSYTE">
+						
 					</div>
 				</div>
 			</div>
