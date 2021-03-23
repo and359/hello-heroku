@@ -261,7 +261,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -448,11 +448,7 @@
 								b4ifdateIVW = "";
 								b4ifpxIVW = "";
 								
-								<p>Total Equity</p>
-								<!--<h5>$12,476.00</h5>-->
-								<h5><script>etsytotalequity</script></h5>
-								<i class="material-icons small green-text">keyboard_arrow_up</i><br>
-								<b class="green-text">24.76%</b>
+
 					
 								 myChart=new Chart(chr, {
 								//var chart = new Chart(ctx, {
@@ -573,7 +569,11 @@
 			<div class="col s12 m6 l3">
 				<div class="card card-bg white-text">
 					<div class="card-content center" id="ETSYTE">
-						
+						<!--<p>Total Equity</p>
+						<!--<h5>$12,476.00</h5>-->
+						<h5><script>etsytotalequity</script></h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">24.76%</b>-->
 					</div>
 				</div>
 			</div>
