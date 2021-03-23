@@ -253,11 +253,15 @@
 	//echo "<script>document.writeln(txt);</script>";
 	?>
 	<!--end of mysql-->
-
+	
+	<script>
+		var etsytotalequity = "";
+	</script>
+	
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results: </a>
+			<a href="#" class="brand-logo center">Trading Results </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -444,6 +448,7 @@
 								b4ifdateIVW = "";
 								b4ifpxIVW = "";
 								
+								etsytotalequity = "10,000.00";
 								 myChart=new Chart(chr, {
 								//var chart = new Chart(ctx, {
 								   type: 'line',
@@ -564,7 +569,8 @@
 				<div class="card card-bg white-text">
 					<div class="card-content center">
 						<p>Total Equity</p>
-						<h5>$12,476.00</h5>
+						//<h5>$12,476.00</h5>
+						<h5><script>etsytotalequity</script></h5>
 						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
 						<b class="green-text">24.76%</b>
 					</div>
