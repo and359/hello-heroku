@@ -261,7 +261,7 @@
 	<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Trading Results </a>
+			<a href="#" class="brand-logo center">Trading Results: </a>
 			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
@@ -334,7 +334,7 @@
 								   });
 								  }
 								 //});
-								setInterval(function(){setInterval() method execute on every interval until called clearInterval()
+								setInterval(function(){//setInterval() method execute on every interval until called clearInterval()
 								  
 									$('#ETSYTE').load("fetch.php").fadeIn("slow");
 								  
