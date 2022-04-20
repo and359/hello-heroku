@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Trading Analytics</title>
+	<title>Trading Analytic</title>
        
 	<script src="https://code.jquery.com/jquery-3.1.0.js"></script> 	
 	<!--Import Google Icon Font-->
