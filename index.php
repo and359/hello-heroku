@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Trading Analytics</title>
        
-	<script src="https://code.jquery.com/jquery-3.1.0.js"></script> 	
+	 	
 	<!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
